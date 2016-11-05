@@ -60,6 +60,10 @@ li {
       border-radius: 4px 4px 0 0;
   }
   
+  .background{
+    background-color: rgb(230, 231, 232);
+  }
+  
 /*Section 2*/
   .section-2 {
       height: 465px;
@@ -72,6 +76,12 @@ li {
   #bg{
     width: 960px;
     height: 465px;
+  }
+  
+/*info Section*/
+  .info-section {
+    width: 960px;
+    margin: auto;
   }
   
  
