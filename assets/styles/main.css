@@ -1,3 +1,6 @@
 .fn-green-background{
-    #006633
+    background-color: #006633;
+}
+.fn-green-text{
+    color: #006633;
 }
