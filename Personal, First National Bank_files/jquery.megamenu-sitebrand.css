@@ -1,0 +1,38 @@
+ul.megamenu .mm-content-base {
+  border-color:#4aaa42;
+}
+.nav .category li.category:hover > a,
+.nav .category li.category > a:hover {
+  color:#d28e00; /* controls color of top nav when megamenu has dropped */
+}
+.nav .category.Banking li.category.Banking > a,
+.nav .category.BusinessServices li.category.BusinessServices > a,
+.nav .category.CreditCard li.category.CreditCard > a,
+.nav .category.CreditCards li.category.CreditCards > a,
+.nav .category.Investing li.category.Investing > a,
+.nav .category.Lending li.category.Lending > a,
+.nav .category.LoansFinancing li.category.LoansFinancing > a,
+.nav .category.ResourceCenter li.category.ResourceCenter > a,
+.nav .category.SecurityCenter li.category.SecurityCenter > a,
+.nav .category.SpecializedServices li.category.SpecializedServices > a,
+.nav .category.WealthInvesting li.category.WealthInvesting > a {
+  background:#4aaa42;
+  background: -moz-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%) #4aaa42; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.4)), color-stop(100%,rgba(0,0,0,0))) #4aaa42; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%) #4aaa42; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%) #4aaa42; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%) #4aaa42; /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%) #4aaa42; /* W3C */
+}
+.megamenu h3 {
+  color:#4aaa42;
+}
+.megamenu h3 a {
+  color:#4aaa42;
+}
+.megamenu h3 a:hover {
+  color:#d28e00;
+}
+.megamenu ul.nav a:hover {
+  color:#d28e00;
+}

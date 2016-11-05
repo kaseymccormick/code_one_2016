@@ -1,0 +1,66 @@
+/* buttons ***** */
+/* buttons ***** */
+/* buttons ***** */
+#wrapper2 .btn {
+  text-transform:uppercase;
+}
+#wrapper2 ul.btn li,
+#wrapper2 li.btn {
+  clear:none;
+  display:inline;
+  float:left;
+}
+
+#wrapper2 a.btn,
+#wrapper2 button.btn,
+#wrapper2 span.btn {
+  border:1px solid;
+  border-radius:4px;
+  display:inline;
+  float:left;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:small;
+  font-weight:bold;
+  overflow:visible; /* for INPUT, for IE7 and IE9 */
+  padding:0;
+  text-decoration:none;
+
+  -moz-box-shadow: 0 2px 5px #888;
+  -webkit-box-shadow: 0 2px 5px#888;
+  box-shadow: 0 2px 5px #888;
+}
+
+
+/* remove defaults from Mozilla BUTTONs & INPUTs */
+#wrapper2 button::-moz-focus-inner,
+#wrapper2 input.btn::-moz-focus-inner {
+  border:none;
+  margin:0;
+  padding:0;
+}
+
+
+#wrapper2 a.btn span,
+#wrapper2 button.btn span,
+#wrapper2 span.btn input.btn {
+  border:none;
+  display:block;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:small;
+  font-weight:bold;
+  margin:0;
+  overflow:visible; /* for INPUT, for IE7 and IE9 */
+  padding:2px 5px; /* padding-top and padding-bottom MUST be at least 3px for cross-browser compatiblity; also see content-ie7.css and content-ie9.css */
+  text-align:center; /* to accommodate td.redeem */
+}
+
+#wrapper2 a.btn.small,
+#wrapper2 a.btn.small span,
+#wrapper2 button.btn.small,
+#wrapper2 button.btn.small span,
+#wrapper2 span.btn.small,
+#wrapper2 span.btn.small input.btn {
+  font-size:x-small;
+}
+
+/* buttons ***** */

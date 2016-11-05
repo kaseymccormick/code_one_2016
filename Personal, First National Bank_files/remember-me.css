@@ -1,0 +1,32 @@
+#remembered-div {
+	background-color:#fff; 
+  border:1px solid #000;
+  border-top:none;
+	display:none;
+	padding:8px;
+	position:absolute; 
+	z-index:999;
+}
+#remembered-div table#remembered-table {
+	width:140px;
+}
+#remembered-div th {
+	color:#000;
+	font-size:small;
+	font-weight:bold;
+	text-align:left;
+}
+#remembered-div td.right {
+	text-align:right;
+}
+#section2 #remembered-div a#hide-uid-link {
+	color:#808080;
+}
+#remembered-div #remembered-table a.remove-userlink {
+	color:#f00;
+}
+#remembered-div #remembered-table a.select-userlink {
+	color:#000;
+	font-size:x-small;
+	font-weight:normal;
+}
