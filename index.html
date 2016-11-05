@@ -57,14 +57,7 @@
     <h2 class="center">Would you like to learn more about:</h2>
     <div class="pure-g flex">
       <div class="pure-u-1-2">
-        <script>
-        $( "#personal" ).click(function() {
-  $( "#personal-step" ).toggle( "slow", function() {
-    // Animation complete.
-  });
-});
-        </script>
-        <h2 class="flex" id="personal"><a href="#personal-step">Personal Banking</a></h2>
+        <h2 class="flex"><a href="#personal-step" id="personal">Personal Banking</a></h2>
       </div>
       <div class="pure-u-1-2">
         <h2 class="flex"><a href="">Business Banking</a></h2>
@@ -75,13 +68,13 @@
     <div class="pure-g" id="personal-step" style="display: none">
       <a name="personal-step"></a> 
       <div class="pure-u-1-3">
-        <h2 class="flex"><a href="#account-step">Account</a></h2>
+        <h2 class="flex"><a href="#account-step" id="account">Account</a></h2>
       </div>
       <div class="pure-u-1-3">
-        <h2 class="flex"><a href="#loan-step">Loan</a></h2>
+        <h2 class="flex"><a href="#loan-step" id="loan">Loan</a></h2>
       </div>
       <div class="pure-u-1-3">
-        <h2 class="flex"><a href="#cc-step">Credit Card</a></h2>
+        <h2 class="flex"><a href="#cc-step" id="cc">Credit Card</a></h2>
       </div>
     </div>
   </div>
@@ -92,7 +85,7 @@
        <h2 class="flex"><a href="">Checking</a></h2>
      </div>
      <div class="pure-u-1-3">
-        <h2 class="flex"><a href="#savings-step">Savings</a></h2>
+        <h2 class="flex"><a href="#savings-step" id="savings">Savings</a></h2>
      </div>
      <div class="pure-u-1-3">
        <h2 class="flex"><a href="">Investment</a></h2>
@@ -152,6 +145,45 @@
     </div>
   </div>
 </div>
+        <script>
+        $( "#personal" ).click(function() {
+  $( "#personal-step" ).toggle( "slow", function() {
+    // Animation complete.
+  });
+});
+        </script>
+
+        <script>
+        $( "#account" ).click(function() {
+  $( "#account-step" ).toggle( "slow", function() {
+    // Animation complete.
+  });
+});
+        </script>
+
+        <script>
+        $( "#loan" ).click(function() {
+  $( "#loan-step" ).toggle( "slow", function() {
+    // Animation complete.
+  });
+});
+        </script>
+
+             <script>
+             $( "#cc" ).click(function() {
+       $( "#cc-step" ).toggle( "slow", function() {
+         // Animation complete.
+       });
+     });
+             </script>
+
+        <script>
+        $( "#savings" ).click(function() {
+  $( "#savings-step" ).toggle( "slow", function() {
+    // Animation complete.
+  });
+});
+        </script>
 </body>
 </html>
 
