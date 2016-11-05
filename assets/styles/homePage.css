@@ -8,6 +8,11 @@ li {
   margin-top: 20px;
 }
 
+.flex{
+  display: flex;
+  justify-content: space-around;
+}
+
 .section-1{
   border-bottom-color: #c1d82f;
     background-color: #fff;
@@ -84,4 +89,8 @@ li {
     margin: auto;
   }
   
+/*1st question*/
+  .center {
+    text-align: center;
+  }
  
