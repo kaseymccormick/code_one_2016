@@ -145,229 +145,80 @@
 				<div id="idm_header">
 
 					<div id="header2">
+						<!-- cant get the following script to load from another file TODO-->
 						<script>
+							function allowDrop(ev) {
+								ev.preventDefault();
+							}
 
+							function drag(ev) {
+								ev.dataTransfer.setData("Text",ev.target.id);
+							}
+
+							function drop(ev) {
+								ev.preventDefault();
+								var data=ev.dataTransfer.getData("Text");
+								ev.target.appendChild(document.getElementById(data));
+							}
+
+							//							var source;
+							//
+							//							function isbefore(a, b) {
+							//								if (a.parentNode == b.parentNode) {
+							//									for (var cur = a; cur; cur = cur.previousSibling) {
+							//										if (cur === b) {
+							//											return true;
+							//										}
+							//									}
+							//								}
+							//								return false;
+							//							}
+							//
+							//							function dragenter(e) {
+							//								if (isbefore(source, e.target)) {
+							//									e.target.parentNode.insertBefore(source, e.target);
+							//								}
+							//								else {
+							//									e.target.parentNode.insertBefore(source, e.target.nextSibling);
+							//								}
+							//							}
+							//
+							//							function dragstart(e) {
+							//								source = e.target;
+							//								e.dataTransfer.effectAllowed = 'move';
+							//							}
 
 						</script>
-						<div class="widget-list">
-							<ul> <h3>Widgets Available</h3>
-								<li draggable="true" class="widget-list__item">Account Summary</li>
-								<li draggable="true" class="widget-list__item">Transactions</li>
-								<li draggable="true" class="widget-list__item">Document Download</li>
-								<li draggable="true" class="widget-list__item">Transfers</li>
-								<li draggable="true" class="widget-list__item">Bill Pay</li>
-								<li draggable="true" class="widget-list__item">Account Services</li>
-								<li draggable="true" class="widget-list__item">Budget Mapper</li>
-								<li draggable="true" class="widget-list__item">Calculator</li>
-								<li draggable="true" class="widget-list__item">Weather</li>
-							</ul>
+						<!-- end script of todo-->
+
+						<div class="widget-list" >
+							<h3>Widgets Available</h3>
+							<div id="3" draggable="true" ondragenter="dragenter(event)" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item">Document Download</div>
+							<div id="4" draggable="true" ondragenter="dragenter(event)" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item">Transfers</div>
+							<div id="5" draggable="true" ondragenter="dragenter(event)" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item">Bill Pay</div>
+							<div id="6" draggable="true" ondragenter="dragenter(event)" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item">Account Services</div>
+							<div id="8" draggable="true" ondragenter="dragenter(event)" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item">Calculator</div>
+							<div id="9" draggable="true" ondragenter="dragenter(event)" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item">
+								<h5 class=""widget-item__header>Weather</h5>
+								<div class="widget-item__content">
+
+								</div>
+							</div>
+
+
+
+
 						</div>
 
-						<script type="text/javascript" charset="UTF-8">
-							var idmHeader;
-							var redirectParam = "";
-							var counterID = null;
-							var timerID = null;
-							var counter = null;
-							var countdownStatusMsg = " minutes until inactivity logoff.";
-							var timeoutWarningTarget = "/util/tran/timeout/warning.fhtml";
-							var timeoutInMinutes = 10;
-							var timeoutMinimumKeepAliveInterval = 300000;
-							var timeoutLastKeepAliveTime = 0;
-							var timeoutDelayKeepAlive = false;
 
-							jQuery(document).ready(function() {
-								idmHeader = jQuery('#idm_header');
-								StartTimeoutCountdown();
-							});
-
-							function StartTimeoutCountdown() {
-								StopTimers();
-								StartTimers();
-							}
-
-							function StopTimers() {
-								if (timerID) {
-									clearTimeout(timerID);
-								}
-								if (counterID) {
-									clearInterval(counterID);
-								}
-							}
-
-							function StartTimers() {
-								var BaseTimeout = ((timeoutInMinutes * 60000) - 15000);
-								timerID = setTimeout("DoTimeoutAction()", BaseTimeout);
-								counterID= setInterval("UpdateTimeoutClock()",60000);
-								counter = timeoutInMinutes;
-								jQuery("#logout_counter").html(timeoutInMinutes + countdownStatusMsg);
-							}
-
-							function UpdateTimeoutClock() {
-								counter = counter - 1;
-								if(counter > 1) {
-									jQuery("#logout_counter").html(counter + countdownStatusMsg);
-								} else {
-									jQuery("#logout_counter").html("Closing session in 1 minute due to inactivity");
-									ShowTimeoutWarning();
-								}
-								return (true);
-							}
-
-							function ShowTimeoutWarning() {
-								open(timeoutWarningTarget, "timeoutconfirm", "scrollbars=no,menubar=no,resizable=0,copyhistory=0,width=450,height=200");
-							}
-
-							function ResetTimeoutCountDown() {
-								StartTimeoutCountdown();
-							}
-
-							function DoTimeoutAction() {
-								StopTimers();
-								jQuery("#logout_counter").html("");
-								jQuery("#signOffForm").submit();
-							}
-						</script>
 					</div>
 				</div>
 			</div> <!-- login -->
-			<!--hey null list-->
-
-			<!--hey throw error-->
-
-			<div class="toggle-panel accordion">
-<span class="toggle-trigger  expand">
-
-
-										</a>
-</span><div class="toggle">										<ul>
-				<li>
-					<a href="https://www.firstnational.com/ConsumerWeb/default/secure/payments/deposits/makedeposit-main">Make a Deposit</a>
-				</li>
-				<li>
-					<a href="https://www.firstnational.com/ConsumerWeb/default/secure/cardservices/retail-statement-request-account-select/true/-2">Statement/Check Request</a>
-				</li>
-				<li>
-					<a href="https://www.firstnational.com/ConsumerWeb/default/secure/cardservices/change-pin/deposit/-1">PIN Request</a>
-				</li>
-				<li class="last">
-					<a href="https://www.firstnational.com/ConsumerWeb/default/secure/cardservices/view-tax-information/view-tax-summary/deposit">Tax Information</a>
-				</li>
-			</ul>
-			</div>								</li>
-				</ul>
-			</div>
-
-
-
-			<script language="javascript" type="text/javascript">
-				$(function() {
-					$("#sso-provider-select").change(function() {
-						if ($(this).val() !== "-1") {
-							execute($(this).val());
-						}
-					});
-				});
-
-				function execute(type) {
-					var leaving = leaveSiteConfirmation('First National Bank Omaha', 'Ascensus');
-
-					if (leaving) {
-						if (type === "NEST_ADVISOR") {
-							window.open("https://www.securebanklogin.com/idmauth/idpsso?providerid=NESTA");
-						} else {
-							window.open("https://www.securebanklogin.com/idmauth/idpsso?providerid=NESTD");
-						}
-					}
-					$("#sso-provider-select").val('-1');
-				}
-			</script>
-
-
-			<!-- Static links -->
-
+			<!-- for some reason the following effects weather thing TODO -11-->
 			<script type="text/javascript">
-				<!--
 				$(document).ready(function(){
 					dynamicBanner("#section1 .cross-sell","leftNav");
 				});
-
-				var sidebarBanner = {
-					bannerImg: "",
-					bannerImgUrl: "",
-					bannerImgFullUrl: "",
-					bannerImgAlt: "",
-					bannerAccountType: "",
-					bannerBrandedUrl: "",
-					exitDisclosureLinkType: "",
-					exitDisclosureNewLink: "",
-					exitDisclosureNewWindow: "",
-					cssClass: "",
-					exitDisclosure: "",
-					createBanner: function(){
-						if((this.bannerAccountType.toUpperCase() == "CCA")){
-							if(this.bannerImg!=""){
-								sidebarBuildScheduledBanner(this.cssClass,this.bannerBrandedUrl,this.bannerImgFullUrl,this.bannerImgAlt,1);
-							}
-						}else if(this.bannerAccountType.toUpperCase() == "NOCC"){
-							if(this.bannerImg!=""){
-								sidebarBuildScheduledBanner(this.cssClass,this.bannerImgUrl,this.bannerImgFullUrl,this.bannerImgAlt,1);
-							}
-						}else if(this.bannerAccountType.toUpperCase() == "NOCCO"){
-							if(this.bannerImg!=""){
-								sidebarBuildScheduledBanner(this.cssClass,this.bannerImgUrl,this.bannerImgFullUrl,this.bannerImgAlt,1);
-							}
-						}else{
-							sidebarBuildScheduledBanner(this.cssClass,this.bannerImgUrl,this.bannerImgFullUrl,this.bannerImgAlt,1);
-						}
-					},
-					createDefaultBanner: function(){
-						sidebarBuildScheduledBanner(this.cssClass,this.bannerImgUrl,this.bannerImgFullUrl,this.bannerImgAlt,0);
-					},
-					createPartnerBanner: function(){
-						sidebarBuildPartnerBanner(this.cssClass,this.bannerImgUrl,this.bannerImgFullUrl,this.bannerImgAlt,this.partnerName,this.parameter,this.getRequest);
-					}
-				};
-
-				var accountTypeCCA = "";
-				var accountTypeBCL = "";
-				var hasFicoAccount = "";
-
-				var hasOnlyCC = "";
-				var speedwayRewardsNumber = "";
-
-
-
-
-				function sidebarBuildScheduledBanner(cssClass,bannerUrl,bannerImg,bannerImgAlt,scheduledBanner) {
-					if(true == true && hasFicoAccount && (accountTypeCCA || accountTypeBCL) && scheduledBanner != 1){
-						$(cssClass).html("<a href='/ConsumerWeb/default/secure/cardservices/fico-score/view-fico-score' target='' id='cross-sell'><img src='/ConsumerStatic/default/img/fico/banners/leftnav_fico.jpg' class='ad' alt='View your FICO Bankcard Score 8	'/></a>");
-					}else{
-						if(sidebarBanner.exitDisclosure == 1){
-							$(cssClass).html("<a href='javascript:siteDisclosure(\""+sidebarBanner.exitDisclosureLinkType+"\", \"First National Bank Omaha\", \""+sidebarBanner.exitDisclosureNewLink+"\", \""+sidebarBanner.bannerImgUrl+"\", \""+sidebarBanner.exitDisclosureNewWindow+"\");' id='cross-sell'><img src='"+bannerImg+"' class='ad' alt="+bannerImgAlt+"/></a>");
-						}else{
-							$(cssClass).html("<a href="+bannerUrl+" target='' id='cross-sell'><img src='"+bannerImg+"' class='ad' alt="+bannerImgAlt+"/></a>");
-						}
-					}
-				}
-
-				function sidebarBuildPartnerBanner(cssClass,bannerUrl,bannerImg,bannerImgAlt,partnerName,parameter,getRequest) {
-					if (getRequest) {
-						/* Only POST is currently used/supported */
-					} else {
-						$(cssClass).html(
-								'<form id="'+partnerName+'-form" class="partner-banner" method="post" target="_blank" action='+bannerUrl+'>' +
-								'<input type="image" src="'+bannerImg+'" onclick="goToPartnerLandingPage(\''+partnerName+'\');" />' +
-								'</form>'
-						);
-
-						if (parameter) {
-							$("#"+partnerName+"-form").append(
-									'<input type="hidden" name='+parameter.name+' value='+parameter.value+' />'
-							);
-						}
-					}
-				}
 
 				function goToPartnerLandingPage(partnerName) {
 					var newPage = leaveSiteConfirmation('First National Bank Omaha', capitalizeFirstLetter(partnerName));
@@ -379,130 +230,40 @@
 						return string.charAt(0).toUpperCase()+string.slice(1);
 					}
 
-					function onFormSubmit(event, newPage) {
-
-						// Set up the site catalyst object
-						s=s_gi(s_account);
-
-						// Create a variable to be used as a unique page identifier
-						var siteCatalystReference = scatalyst.pageName+":"+sidebarBanner.bannerImgUrl;
-
-						// event98 defines this as an exit link
-						s.events='event98';
-
-						// tl is the track link function
-						s.tl(this,'e',siteCatalystReference);
-						// End of Site Catalyst code
-
-						if (newPage) {
-							/*you should be able to submit multiple times*/
-							formSubmitCount = 0;
-						} else {
-							event.preventDefault();
-						}
-					}
 				}
-				//-->
-			</script>		<div class="cross-sell"><a href="https://www.firstnational.com/common/shared/mobilebanking/mobile_omaha.html?ecid=143103OMARDG0034IWSNTRADT" target="" id="cross-sell"><img src="./Account Detail_files/leftnav-mobile.jpg" class="ad" alt="Mobile" banking="" is="" now="" available=""></a></div>
+			</script>
+			<!-- end TODO -11-->
+			<div class="cross-sell"><a href="https://www.firstnational.com/common/shared/mobilebanking/mobile_omaha.html?ecid=143103OMARDG0034IWSNTRADT" target="" id="cross-sell"><img src="./Account Detail_files/leftnav-mobile.jpg" class="ad" alt="Mobile" banking="" is="" now="" available=""></a></div>
 
-			<div class="ww" style="float:left;">
-
-				<div id="wwPane">
-					<div class="weatherWidget" id="weatherWidget">
-						<table class="weather-top">
-							<tbody><tr style="float:right;">
-								<td></td>
-								<td class="weather-mainimg"><span id="weather-conditions" class="last"><span class="conditions"><img src="./Account Detail_files/sunny-cloudy.png"></span></span></td>
-								<td class="weather-temp"><span id="weather-currentTemp" class="last"><span class="temp">59</span>°</span></td>
-							</tr>
-							<tr>
-								<td colspan="3" class="weather-city">OMAHA</td>
-							</tr>
-							<tr>
-								<td colspan="3" class="weather-time">
-				<span class="weather-wind last">
-				<span id="weather-currentTime"><span class="currentTime">11:12 am</span></span> Winds: <span id="weather-windDirection"><span class="windDir">SSE</span></span> at <span id="weather-windSpeed" class="last"><span class="windSpeed">7</span></span> m/h
-				</span>
-								</td>
-							</tr>
-							</tbody></table>
-						<table class="weather-bottom">
-							<tbody><tr class="weather-day">
-								<td><span id="weather-day1Date" class="last"><span class="day1Date">Today</span></span></td>
-								<td><span id="weather-day2Date" class="last"><span class="day2Date">Sun</span></span></td>
-								<td><span id="weather-day3Date" class="last"><span class="day3Date">Mon</span></span></td>
-								<td><span id="weather-day4Date" class="last"><span class="day4Date">Tue</span></span></td>
-							</tr>
-							<tr class="weather-img">
-								<td><span id="weather-day1weather" class="last"><span class="day1weather"><img src="./Account Detail_files/sunny.png"></span></span></td>
-								<td><span id="weather-day2weather" class="last"><span class="day2weather"><img src="./Account Detail_files/partly-sunny.png"></span></span></td>
-								<td><span id="weather-day3weather" class="last"><span class="day3weather"><img src="./Account Detail_files/rain.png"></span></span></td>
-								<td><span id="weather-day4weather" class="last"><span class="day4weather"><img src="./Account Detail_files/partly-sunny.png"></span></span></td>
-							</tr>
-							<tr class="weather-hilo">
-								<td><span class="hi"><span id="weather-day1high" class="last"><span class="day1high">72</span></span>°</span> <span id="weather-day1low" class="last"><span class="day1low">46</span></span>°</td>
-								<td><span class="hi"><span id="weather-day2high" class="last"><span class="day2high">66</span></span>°</span> <span id="weather-day2low" class="last"><span class="day2low">50</span></span>°</td>
-								<td><span class="hi"><span id="weather-day3high" class="last"><span class="day3high">63</span></span>°</span> <span id="weather-day3low" class="last"><span class="day3low">45</span></span>°</td>
-								<td><span class="hi"><span id="weather-day4high" class="last"><span class="day4high">61</span></span>°</span> <span id="weather-day4low" class="last"><span class="day4low">43</span></span>°</td>
-							</tr>
-							</tbody></table>
-					</div></div>
-
-				<script type="text/javascript">
-
-					$(document).ready(function(){
-						showWw();
-					});
-
-					// Functions for Scheduled Payments and Transfers Ajax Requests
-					function showWw() {
-						sendAjaxRequest('GET', null, '/ConsumerWeb/default/secure/weather/weatherWidget', 'wwPane', processWWAjaxSuccessResponse);
-					}
-
-					function processWWAjaxSuccessResponse(html) {
-						updateSessionSyncTokensFromAjaxResponse(html);
-						$("#wwPane").html(html);
-					}
-
-
-					function sendAjaxRequest(getOrPost, formIdIfPost, urlToSendTo, divId, successFunction) {
-
-						var serializedData = null;
-						if (getOrPost === 'POST') {
-							serializedData = $('#' + formIdIfPost).serialize();
-						}
-						$.ajax({
-							type: getOrPost,
-							url: urlToSendTo,
-							data: serializedData,
-							beforeSend: function() {
-								$("#" + divId).html('<div class="loader"></div>');
-							},
-							success: successFunction,
-							dataType: 'html'
-						});
-
-					}
-				</script>
-			</div> <!-- column -->
+			<!-- column -->
 
 		</div>
 
 		<div class="main-content dashboard" id="main_content">
-				<div class="pure-g dashboard">
-					<div class="pure-u-7-24 dashboard__card">
+			<div class="pure-g dashboard">
 
-						<p>a card</p>
 
-					</div>
-					<div class="pure-u-7-24 dashboard__card">
-						<p>something</p>
-					</div>
-					<div class="pure-u-7-24 dashboard__card">
-						<p>something</p>
-					</div>
+
+				<div class="pure-u-7-24 dashboard__card">
+
+					stuff
+
 				</div>
+				<div class="pure-u-14-24 dashboard__card min-height-200" id="playlist" ondrop="drop(event)" ondragover="allowDrop(event)">
+					draggable area for widget
+				</div>
+				<div class="pure-u-7-24 dashboard__card">
+					stuff
+				</div>
+				<div class="pure-u-7-24 dashboard__card">
+					studiv
+				</div>
+				<div class="pure-u-7-24 dashboard__card">
+					another
+				</div>
+			</div>
 		</div>
+	</div>
 
 
 </div><!-- main-content -->

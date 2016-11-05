@@ -219,7 +219,7 @@
 .main-content .toggle ol {
 	margin-left: 15px;
 }
-	
+
 /* Inline images */
 .main-content .image {
 	margin-bottom: 10px;
@@ -457,7 +457,7 @@
 	margin-left:15px;
 }
 .main-content form .bank-address.indent{
-	margin-left:0;	
+	margin-left:0;
 }
 .main-content .bank-address.block {
 	margin-bottom:10px;
@@ -475,7 +475,7 @@
 	{
 	font-size: 11px;
 }
-/* 
+/*
 
 /* Columns */
 .main-content .column {
@@ -496,7 +496,7 @@
 
 .main-content .payments-dashboard-right-column .widget{
 	float: right;
-	clear: right;	
+	clear: right;
 }
 
 .main-content h4 {
@@ -588,7 +588,7 @@
 /* Notification with start and double star */
 .main-content .notification-ref.star:after,
 .main-content .notification.star:before {
-	content: "*"; 
+	content: "*";
 }
 .main-content .notification-ref.star2:after,
 .main-content .notification.star2:before {
@@ -1293,7 +1293,7 @@ ul#breadcrumbs {
 	text-align: center;
 }
 
-/* Backup for floating single buttons right. 
+/* Backup for floating single buttons right.
 Currently not being used, but is here in case we find a need to use it on static pages. TR, 3/20/12 */
 .main-content a.btn.right,.main-content button.btn.right,.main-content span.btn.right input
 	{
@@ -1675,7 +1675,7 @@ body.pop-up.card-exit-disclosure ul.btn{
 }
 /* .main-content .tab-panes .pane.nopadding {
 	padding:0px;
-	border:none;	
+	border:none;
 	border-top-width: 4px;
 	border-top-style: solid;
 } */
@@ -2043,14 +2043,14 @@ body.pop-up.card-exit-disclosure ul.btn{
 	width:100%;
 }
 .main-content .marketing-banner.custom.welcome-banner-1 span h2,
-.main-content .marketing-banner.custom.welcome-banner-1 span p{	
-	color: #ad3b23;		
+.main-content .marketing-banner.custom.welcome-banner-1 span p{
+	color: #ad3b23;
 	left: 10px;
 	margin: 5px 0 0;
 	position: relative;
 }
-.main-content .marketing-banner.custom.welcome-banner-1 span p{	
-	color:#FFFFFF;		
+.main-content .marketing-banner.custom.welcome-banner-1 span p{
+	color:#FFFFFF;
 }
 .main-content .marketing-banner.custom.welcome-banner-1 span p{
     font-size: large;
@@ -2073,13 +2073,13 @@ body.pop-up.card-exit-disclosure ul.btn{
 	width:100%;
 }
 .main-content .marketing-banner.custom.welcome-banner-3 span h2,
-.main-content .marketing-banner.custom.welcome-banner-3 span p{	
-	color:#F6C371;		
-	left: 15px;	
+.main-content .marketing-banner.custom.welcome-banner-3 span p{
+	color:#F6C371;
+	left: 15px;
 	position: relative;
 }
-.main-content .marketing-banner.custom.welcome-banner-3 span p{	
-	color:#FFFFFF;	
+.main-content .marketing-banner.custom.welcome-banner-3 span p{
+	color:#FFFFFF;
 }
 .main-content .marketing-banner.custom.welcome-banner-3 span p{
 	font-size: large;
@@ -2092,7 +2092,7 @@ body.pop-up.card-exit-disclosure ul.btn{
 	font-weight: bold;
 	margin: 9px 0 0;
 }
-	
+
 /* Banners that toggle (not used much) */
 .main-content .toggle-banner .toggle,.main-content .toggle-banner span.toggle-trigger
 	{
@@ -2283,11 +2283,11 @@ body.pop-up.card-exit-disclosure ul.btn{
 
 /* doing boxes this way allows for colored dividers between them, gradients (background image), dividers shorter than the boxes, or no dividers */
 .main-content .boxes { /* background-color:#e6e7e8; */
-	/*  
-		background-color is used to provide colored dividers between the boxes.  
+	/*
+		background-color is used to provide colored dividers between the boxes.
 	    This was done instead of using border- properties because a background image
 	    could be used instead to allow for a gradient or divider that is not as
-	    tall as the boxes. 
+	    tall as the boxes.
 	*/
 	margin: 0 auto 30px;
 	overflow: auto;
@@ -2372,7 +2372,7 @@ body.pop-up.card-exit-disclosure ul.btn{
 
 /* END overrides because the boxes aren't the same width */
 .main-content .boxes .box .content {
-	/* a content div eliminates worry about what tags are inside.  don't want to put 
+	/* a content div eliminates worry about what tags are inside.  don't want to put
 	padding on div.box and then have to pull the images out with a negative margin */
 	font-size: .9em;
 	padding-left:10px;
@@ -2421,11 +2421,11 @@ body.pop-up.card-exit-disclosure ul.btn{
 	height:67px;
 	margin-bottom: 10px;
 	overflow: hidden;
-	position: relative;	
+	position: relative;
 }
 
 .main-content .rewards.tall {
-	height:225px;	
+	height:225px;
 }
 .main-content .rewards #detailSection p {
 	padding-top: 40px;
@@ -2449,15 +2449,15 @@ body.pop-up.card-exit-disclosure ul.btn{
 .main-content .rewards .detail .rewardsBalance {
 	float:right;
 	width: 300px;
-}	
-.main-content .rewards .detail.orvis {	
+}
+.main-content .rewards .detail.orvis {
 	right: 60px;
 }
 
 .main-content .rewards .detail h2{
 	color: #4C5A52;
 	font-size: medium;
-	font-weight: bold;    
+	font-weight: bold;
 }
 
 .main-content .rewards h2 {
@@ -2765,7 +2765,7 @@ body.pop-up.card-exit-disclosure ul.btn{
 .odp-notification sup{
 	vertical-align: baseline;
 	position: relative;
-	top: -0.4em;	
+	top: -0.4em;
 	font-size: .6em;
 }
 
@@ -2847,7 +2847,7 @@ body.pop-up.card-exit-disclosure ul.btn{
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */	
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
 	border: solid 1px;
 	border-radius: 10px;
 	display: block;
@@ -2855,7 +2855,7 @@ body.pop-up.card-exit-disclosure ul.btn{
 	font-weight: normal;
 	margin-bottom: 10px;
 	moz-border-radius: 10px;
-	-webkit-border-radius: 10px;	
+	-webkit-border-radius: 10px;
 	margin-top: 10px;
 }
 
@@ -2865,7 +2865,7 @@ body.pop-up.card-exit-disclosure ul.btn{
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
-	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */	
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
 	border: solid 1px;
 	border-radius: 10px;
 	display: block;
@@ -2875,7 +2875,7 @@ body.pop-up.card-exit-disclosure ul.btn{
 	margin-left: auto;
 	margin-right: auto;
 	moz-border-radius: 10px;
-	-webkit-border-radius: 10px;	
+	-webkit-border-radius: 10px;
 	margin-top: 20px;
 	padding: 10px;
 	text-align: center;
@@ -3095,7 +3095,7 @@ body.pop-up.card-exit-disclosure ul.btn{
 }
 
 .main-content .accounts .account .name a {
-	
+
 }
 
 .main-content .accounts .account .detail {
@@ -3509,9 +3509,9 @@ body.pop-up.card-exit-disclosure ul.btn{
 .main-content .bt-additional-trans .btn.add span {
 	background: none;
 	padding: 2px 5px;
-} 
+}
 
-.main-content form .agreement-scroller.balance-transfer-terms{	
+.main-content form .agreement-scroller.balance-transfer-terms{
 	border: 1px solid #CCC;
 	height: auto;
 }
@@ -3524,11 +3524,11 @@ table.detailSection {
 	border: 1px solid #CCC;
 	border-collapse: separate;
 	-webkit-border-radius: 10px;
-	border-radius: 10px;	
+	border-radius: 10px;
 }
 
 .detailSection td {
-	border: none;	
+	border: none;
 }
 
 .detailSection tr.offerRow{
@@ -3576,7 +3576,7 @@ table.detailSection {
 {
 	font-size: 12px;
 }
-	
+
 .offerFee {
 	display: block;
 	text-align: left;
@@ -3588,7 +3588,7 @@ table.detailSection {
     background-repeat: no-repeat;
     float: left;
     height: 12px;
-    width: 11px;	
+    width: 11px;
 }
 
 .detailSection td.notification div.offerDisclosure {
@@ -3711,8 +3711,8 @@ body#design-your-card .main-content #agreementScrollArea {
 		height: 100%;
 	}
 }
-/* 
-I removed this rule from the search page, because it was causing some scrollbars. 
+/*
+I removed this rule from the search page, because it was causing some scrollbars.
 It didnt really seem like it was needed, but lets touch base if it is. TR, 6-12-12
 .transaction-search .specificSearchFields li {
 	margin: 0px 0px 0px 10px;
@@ -4263,7 +4263,7 @@ It didnt really seem like it was needed, but lets touch base if it is. TR, 6-12-
 }
 
 .savings-apy {
-    color: #02578d;			    
+    color: #02578d;
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 135px;
 	font-weight: 600;
@@ -4287,7 +4287,7 @@ It didnt really seem like it was needed, but lets touch base if it is. TR, 6-12-
 
 .annual-spend-tracker .container .progress {
 	margin: 0 auto;
-	width: 200px; 
+	width: 200px;
 }
 
 .annual-spend-tracker .progress {
