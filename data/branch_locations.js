@@ -1,5 +1,6 @@
-{
-  "markers": {
+function locations() {
+  
+  return {
     "marker": [
       {
         "-lat": "41.17562",

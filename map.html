@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/styles/main.css"/>
+    <link rel="stylesheet" href="assets/styles/map.css"/>
+    <title>FNB | Branch Locator</title>
+
+    <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/base-min.css&pure/0.6.0/grids-min.css&pure/0.6.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/base-min.css">
+    <script src="data/branch_locations.js"></script>
+</head>
+<body>
+	<h3></h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+      	var branches = locations().marker;
+
+      	var uluru = {"lat": 41.2587199, "lng": -95.9566695}
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru        });
+
+        for (i = 0; i < branches.length; i ++ ){
+        	var marker = new google.maps.Marker({
+          		position: {"lat": parseFloat(branches[i]["-lat"]),"lng": parseFloat(branches[i]["-lng"])},
+          		map: map
+        	});
+        }
+
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHo9YOCSVQJtZ54zGnnjuEi93gsK6aw8U&callback=initMap">
+    </script>
+</body>
+</html>
+
