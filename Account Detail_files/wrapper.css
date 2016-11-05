@@ -1,0 +1,819 @@
+body {
+	color: #4C5A52;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: small; /* 13 px */
+	margin: 0;
+	/* word-wrap: break-word; */
+}
+
+a {
+	text-decoration: underline;
+}
+
+/* Wrapper */
+h3 {
+	font-weight: bold;
+}
+.wrapper {
+	height: auto;
+	margin: 0 auto;
+	width: 962px;
+	overflow: auto;
+}
+
+/* Utility nav */
+/* Utility nav */
+/* Utility nav */
+.utility-nav {
+	float: right;
+	font-size: x-small;
+	height: auto;
+	list-style-type: none;
+	margin-bottom: 46px;
+	width: auto;
+}
+.utility-nav li {
+	border-right: 1px solid #999;
+	float: left;
+}
+.utility-nav li.last {
+	border: none;
+}
+.utility-nav a {
+	display: block;
+	text-decoration: none;
+}
+
+.utility-nav a:hover {
+	text-decoration: underline;
+}
+
+/* Header Alert */
+/* Header Alert */
+/* Header Alert */
+
+body > .alert-msg {
+	display: none;
+}
+
+body > .alert-msg .content {
+	background-color: #FFF;
+	border: 1px solid #f00;
+	border-radius: 7px;
+	margin: 10px auto;
+	padding: 10px;
+	text-align: center;
+	width: 960px;
+}
+
+body > .alert-msg .content p{
+	margin: 0;
+	padding: 0;
+}
+
+html.browser-unsupported .alert-msg {
+	display: block;
+}
+
+/* Header */
+/* Header */
+/* Header */
+
+#header {
+	float: left;
+	position: relative;
+	width: 100%;
+	z-index: 100; /* Place above sections below to reveal shadow */
+}
+#header .wrapper {		
+	overflow: auto;
+	position: relative;
+	width: 962px;
+	z-index:150;	
+}
+#header,
+#header .wrapper {
+	border-style:solid;
+}
+/* Header Utility Nav */
+#header .utiltiy-nav li,
+#header .utility-nav a {
+	color: #4B5951;
+}
+
+/* Brand Logo */
+#header .brand-logo {
+	float: left;
+	margin-bottom:10px;
+}
+.brand-logo img a {
+	border: none;
+}
+
+/* Header Nav */
+#header .nav-container {
+	width: 100%;
+}
+#header .nav {
+	font-size: medium;
+	margin: 0;
+	padding: 0;
+	float: right;
+	list-style-type: none;
+	width: auto;
+}
+#header .nav li {
+	float: left;
+	font-weight: bold;
+	width: auto;
+}
+#header .nav li a {
+	border-bottom:none;
+	color: #666;
+	display: block;
+	font-size: .9em;
+	font-weight: bold;
+	padding: 5px 10px;
+	text-decoration: none;
+	
+}
+#header .nav div.nav-spacer {
+	float:left;
+}
+#header .nav li.here a {
+	border-color:transparent;
+	color: #fff;	
+}
+#header .nav li.here a,
+#header .nav li a:hover {
+	text-decoration: none;
+}
+
+/* End Header *****/
+
+
+/* Content Genaral */
+/* Content Genaral */
+/* Content Genaral */
+#content {
+	background-repeat: repeat-x;
+	height: auto;
+	float: left;
+	width: 100%;
+	
+	z-index: 100; /* Place above sections below to reveal shadow */
+}
+
+/* Content Genaral *****/
+
+/* Section 1 & 2 General */
+/* Section 1 & 2 General */
+/* Section 1 & 2 General */
+
+#section1, 
+#section2 {
+	float: left;
+	height: auto;
+	min-height: 400px;
+}
+#section2 { 
+	overflow: auto;
+	width: 710px;
+}
+#section1 /* Left Sidebar */ {
+	width: 229px;
+}
+#section1 a {
+	color: #000;
+	text-decoration: none;
+}
+
+/* Section 1 & 2 General *****/
+
+/* Section 1 */
+/* Section 1 */
+/* Section 1 */
+#section1 #idm_header,
+#section1 #signOnForm,
+#section1 .info-box {
+	float:left;
+}
+#section1 #signOnForm,
+#section1 .info-box {
+	padding: 10px;
+	width: 190px;
+}
+#section1 #signOnForm,
+#section1 .logged-in{
+	width:190px;
+}
+/* Login Box */
+#section1 #idm_header{
+	font-size:x-small;
+}
+#section1 #signOnForm {
+	background-image:url(../img/bg-login-homepage.png);
+	
+	padding:10px;
+}
+#section1 #signOnForm input#userId,
+#section1 #signOnForm select{
+	background-color:#E6E7E8;
+	border:1px solid #000;
+	color:#4C5A52;
+	font-size:small;
+	margin-bottom:10px;
+	padding:3px;
+}
+#section1 #signOnForm select {
+	width: 190px;
+}
+#section1 #signOnForm input#userId {
+	width: 182px;
+}
+#section1 #signOnForm label,
+#section1 #signOnForm .help a {
+	color:#FFF;
+}
+#section1 #signOnForm a.btn, 
+#section1 #signOnForm form span.btn {
+	border-color: #353537;
+	background-color:#6B6B6B;
+}
+
+/* Logged In State */
+#section1 .logged-in {
+	padding:10px;
+	float:left;	
+}
+
+/* Info Box */
+#section1 .info-box{
+	background-color: #E6E7E8;
+	border:1px solid #ccc;
+	font-size:11px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/* Info box, nav, and ad constants */
+#section1 .nav {
+	width: 225px;
+}
+
+#section1 .advertisement {
+	
+	
+}
+
+#section1 .info-box,
+#section1 .nav,
+#section1 .advertisement {
+	margin-bottom: 15px;
+}
+
+#section1 .logged-in h2 {
+	font-weight: bold;
+}
+
+#section1 .logged-in h2,
+#section1 .info-box h3 {
+	background-image: url(../img/sidebar-info-box-h3-bg.png);
+	background-position: 0 bottom;
+	background-repeat: repeat-x;
+	color: #FFFFFF;
+	margin: -10px -10px 5px;
+	padding: 5px 10px;
+	font-size: small;
+	overflow: auto;
+	text-transform: uppercase;
+	position: relative;
+}
+#section1 .info-box h3{
+	background-position: 0 0;
+
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;	
+}
+#section1 .info-box.notification h3 {
+	margin: -10px -10px 5px;
+	padding: 5px 10px;
+	font-size: small;
+	overflow: auto;
+	text-transform: uppercase;
+	position: relative;	
+}
+#section1 .info-box h3 a,#section1 .logged-in h2 a {
+	color: #FFF;
+}
+
+#section1 .logged-in h2 .email {
+	font-weight: normal;
+	text-transform: none;
+	word-wrap: break-word;
+}
+#section1 .info-box h3 span {
+	font-weight: normal;
+	text-transform: none;
+}
+
+#section1 .info-box h3 span.link,
+#section1 .logged-in h2 span.link {
+	clear: right;
+	float: right;
+	font-size: x-small;
+}
+
+#section1 .info-box h3 span.link a,
+#section1 .logged-in h2 span.link a {
+	display: block;
+	text-decoration: none;
+}
+
+#section1 .info-box h3 span.link a:hover,
+#section1 .logged-in h2 span.link a:hover {
+	text-decoration: underline;
+}
+
+#section1 .info-box a {
+	text-decoration: underline;
+}
+
+#section1 ul,#section1 li {
+	margin: 0;
+	padding: 0;
+}
+
+#section1 .info-box li {
+	list-style-type: none;
+	margin-bottom: 3px;
+}
+
+/* Log in */
+#section1 .logged-in #last-login {
+	margin-bottom: 5px;
+}
+
+#section1 .logged-in #last-login h3,#section1 .logged-in #last-login span.name
+	{
+	display: inline;
+}
+
+#section1 .logged-in #last-login h3 {
+	font-size: 11px;
+}
+
+#section1 .logged-in .links a {
+	background: url(../img/login-links-li-bg.png) 0 3px no-repeat;
+	display: list-item;
+	list-style-type: none;
+	padding-left: 10px;	
+}
+
+#section1 .logged-in span.email,
+#section1 .logged-in .last-login,
+#section1 .logged-in .links,
+#section1 .logged-in #logout_counter,
+#section1 #login li#li-userId label,
+#section1 #login li#li-select-account label
+	{
+	margin-bottom: 5px;
+}
+
+#section1 #login li#li-userId,#section1 #login li#li-select-account {
+	list-style-type: none;
+}
+
+#section1 .logged-in .last-login span {
+	display: inline;
+	font-weight: normal;
+	padding: 0 2px;
+	width: auto;
+}
+
+#section1 .logged-in .btn {
+	float: right;
+	min-width: 45%;
+}
+
+#section1 #login .btn {
+	float: right;
+	width: 90px;
+}
+
+#section1 .logged-in h2 span.name,#section1 .logged-in span.email,#section1 .logged-in .links li a,#section1 .logged-in .btn span,#section1 #login .btn input,#section1 #login .half-width input.btn,#section1 #login form span.help
+	{
+	display: block;
+}
+
+/* Login Buttons */
+#section1 .logged-in li.half-width,#section1 #login li.half-width#li-enroll
+	{	
+	float: left;
+	list-style-type: none;
+	width: auto;
+}
+
+#section1 #login li.half-width#li-btn-login {
+	float: left;
+	display: inline;
+	list-style-type: none;
+	width: 51%;
+}
+
+#section1 #login span#span-submitBtn {
+	margin-bottom: 5px;
+}
+
+#section1 #login span.help a {
+	text-decoration: underline;
+}
+
+#section1 .logged-in li.half-width.btn-login,#section1 #login li.half-width.btn-login
+	{
+	float: right;
+}
+
+#section1 .logged-in .btn-login span.btn input,#section1 #login .btn-login span.btn input
+	{
+	background-color: transparent;
+	background-image: url(../img/icon-log-out.png);
+	background-position: 98% center;
+	background-repeat: no-repeat;
+	border: none;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	display: block;
+	padding: 1px 10px 1px 5px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+#section1 #login .btn-login input.btn-login {
+	text-align: left;
+}
+
+#section1 #login form span.help,#section1 #login form label.remember-me
+	{
+	float: left;
+}
+
+#section1 #login form label.remember-me {
+	padding-top: 10px;
+	vertical-align: top;
+	margin: 0px;
+	padding: 0px;
+}
+
+#section1 #login form input#remember-id {
+	margin-right: 3px;
+}
+
+#section1 #login form input.checkbox {
+	margin-right: 5px;
+	vertical-align: top;
+}
+
+/* Section 1 *****/
+
+/* Notifications */
+#section1 .info-box.notifications li {
+	background-repeat: no-repeat;
+	min-height: 40px;
+}
+
+#section1 .info-box.notifications li .icon {
+	display: block;
+	float: left;
+	height: 40px;
+	width: 40px;
+}
+
+#section1 .info-box.notifications li a {
+	display: block;
+	padding: 2px 0 5px 0px;
+}
+
+#section1 .info-box.notifications li.SMC_MSG_WAITING .icon {
+	background-image: url(../img/icon-online-message-center.png);
+}
+
+#section1 .info-box.notifications li.CARD_ACTIVATION .icon {
+	background-image: url(../img/icon-card-activation.png);
+}
+
+#section1 .info-box.notifications li.UPDATE_INFORMATION .icon,#section1 .info-box.notifications li.UPDATE_INCOME .icon,#section1 .info-box.notifications li.UPDATE_OVERDRAFT .icon
+	{
+	background-image: url(../img/icon-update-information.png);
+}
+
+#section1 .info-box.notifications li.CARD_OVERLIMIT .icon {
+	background-image: url(../img/icon-alert-information.png);
+}
+
+#section1 .info-box.notifications li.PAYMENT_DUE .icon {
+	background-image: url(../img/icon-alert-information.png);
+}
+
+#section1 .info-box.notifications li.UPDATE_INFORMATION a .text,#section1 .info-box.notifications li.CARD_ACTIVATION a .text,#section1 .info-box.notifications li.SMC_MSG_WAITING a .text,#section1 .info-box.notifications li.CARD_OVERLIMIT a .text,#section1 .info-box.notifications li.PAYMENT_DUE a .text,#section1 .info-box.notifications li.UPDATE_INCOME a .text,#section1 .info-box.notifications li.UPDATE_OVERDRAFT a .text
+	{
+	float: left;
+	margin: 6px 0 0 6px;
+}
+
+/* Nav */
+#section1 .nav {
+	background-image: url(../img/sidebar-nav-bg.png);
+	background-repeat: repeat-y;
+	float: left;
+	/* width:230px; */
+}
+
+#section1 .nav li {
+	list-style-type: none;
+	margin-bottom: 1px;
+}
+
+#section1 .nav li a {
+	display: block;
+	padding: 8px 10px 10px 18px;
+}
+
+#section1 .toggle-trigger {
+	display: block;
+}
+
+#section1 .nav li.parent a {
+	overflow: auto;
+	padding-left: 3px;
+}
+
+#section1 .nav li.parent .title {
+	margin-left: 5px;
+	width: 180px;
+	display: block;
+}
+
+#section1 .nav .icon,#section1 .nav li.parent .title {
+	float: left;
+}
+
+#section1 .nav .icon {
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	margin-top: 3px;
+}
+#section1 .icon.collapse,
+#section1 .icon.expand {
+	background-image: url(../img/icon-expand-local-nav.png);
+	background-repeat: no-repeat;
+}
+#section1 .icon.collapse {
+	background-position: -10px 0;
+}
+
+
+#section1 .nav li li {
+	margin-left: 15px;
+	width: auto;
+}
+
+#section1 .nav li li a {
+	padding: 4px 0;
+	text-decoration: none;
+}
+
+/* Cross sell */
+#section1 .cross-sell {
+	float: left;
+	width: 210px;
+}
+#section1 .cross-sell .ad {
+	border-style: solid;
+	border-width: 1px;
+	margin: 0 auto 20px;
+	overflow: hidden;
+}
+
+#section1 .cross-sell .partner-banner {
+	padding-left: 15px;
+	margin-bottom: 20px;
+}
+
+/* Static Links */
+#section1 .static-links {
+	float: left;
+	margin-bottom: 20px;
+}
+#section1 .static-links li {
+	background-color: #EFEFEF;
+	background-image: url(../img/nav-gradient-bg.png);
+	background-position: 0 20px;
+	background-repeat: repeat-x;
+	border: 1px solid #CCC;
+	list-style-type: none;
+	width: 210px;
+	vertical-align: middle;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;	
+}
+#section1 .static-links li a {
+	background-position: 5px 50%;
+	background-repeat: no-repeat;
+	display: block;
+	font-weight: bold;
+	padding: 10px 0 10px 30px;
+}
+
+#section1 .static-links li a:hover {
+	text-decoration: none;
+}
+
+#section1 .static-links li.sso-item {
+	padding: 8px 0 8px 0px;
+	text-align: center;
+}
+
+/* Start of Weather Widget */
+.weatherWidget {
+	border:1px solid #ccc;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	width:210px;
+	background: #efefef; /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+}
+#section1 table.weather-top,
+#section1 table.weather-bottom {
+	width:100%;
+	margin-top:5px;	
+}
+#section1 .weather-city {
+	/* color:#4a5c52; */
+	font-weight:bold;	
+	padding:2px 0px 0px 5px;
+}
+#section1 .weather-mainimg img{
+	width: 60px;
+	height: 60px;
+}
+#section1 .weather-temp {
+	font-size:42px;
+	font-weight: bold;
+	padding:0px 10px;
+}
+#section1 .weather-time {
+	/* color:#4a5c52; */
+	font-size:12px;
+	padding:4px 0 0px 5px;
+}
+#section1 span.weather-wind {
+	/* color:#4a5c52; */
+	font-size:12px;
+	padding-left:10px;
+}
+#section1 .weather-day td{
+	background-color: #999;
+	border-bottom-width: 1px;
+	border-color: #6B6B6B;
+	border-top-width: 1px;
+	border-style: solid;
+	color:#fff;
+	text-align: center;	
+	font-size:12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 2px 0px;
+}
+#section1 .weather-img img{
+	padding: 6px 6px 0 6px;	
+	width: 40px;
+	height: 40px;
+}
+#section1 .weather-img td {
+	border-right:1px solid #ccc;
+}
+#section1 .weather-img td:last-child {
+	border-right:none;
+}
+#section1 .weather-hilo td {
+	border-right:1px solid #ccc;
+	text-align: center;	
+	font-size:12px;
+	padding:10px 0px;
+}
+#section1 .weather-hilo td:last-child {
+	border-right:none;
+}
+#section1 .weather-hilo td span.hi {
+	
+	font-weight:bold;
+}
+
+/* End of Weather Widget */
+
+/* End, Sidebar */
+/* --------------------------------------------------------------------- */
+
+/* Footer */
+/* Footer */
+/* Footer */
+#footer {
+	background-repeat: repeat-x;
+	height: auto !important;
+	min-height: 150px;
+	position: relative;
+	width: 100%;
+	float: left;
+	font-size: x-small;
+}
+
+#footer .wrapper {
+	padding: 30px 0px;
+	overflow: auto;
+	position: relative;
+}
+#footer a {
+	color: #6B6B6B;
+}
+
+#footer .utility h3 {
+	font-size: small;
+	margin-bottom: 0;
+}
+
+#footer ul,#footer li {
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#footer .utility {
+	margin-left: 20px;
+}
+
+#footer .utility li {
+	width: auto;
+	margin-right: 40px;
+}
+
+#footer .utility ul li {
+	font-weight: normal;
+	padding: 2px;
+	float: none;
+}
+
+#footer .utility-nav li:first-child a,
+#footer .utility-nav li.first {
+	padding-left: 0;
+}
+
+#footer .utility-nav,
+#footer .copyright {
+	width: 600px;
+	float: left;
+	margin-bottom: 12px;
+}
+
+#footer ul.bugs {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 50px;
+}
+
+#footer .bugs img {
+	padding-left: 10px;
+}
+
+#footer ul.links {
+	float: right;
+	width: auto;
+	margin-top: 0;
+	padding: 0;
+}
+
+#footer ul.links li {
+	display: inline;
+	float: left;
+	padding: 0 5px;
+}
+
+/* End, Footer */
+/* --------------------------------------------------------------------- */

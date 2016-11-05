@@ -4,3 +4,60 @@
 .fn-green-text{
     color: #006633;
 }
+.cool-teal{
+    color: #00b2a9;
+}
+.cool-green{
+    color:#d7c826;
+}
+.cool-blue{
+
+}
+.warm-peach{
+
+}
+.warm-merlot{
+
+}
+.warm-yellow{
+
+}
+
+
+/*------------------------------
+Logged in, dashboard styles
+------------------------------*/
+.user-bar{
+    height: 40px;
+    background:#006633;
+    color: #fff;
+/*background:linear-gradient( 0deg, #747570, #efefef )*/
+}
+.user-bar ul{
+    margin-top: -7px;
+}
+.user-bar__help li{
+    float:left;
+    padding: 5px 10px;
+    border-right:1px solid #ffffff;
+}
+
+.user-bar__help li:last-child {
+    border: none;
+}
+/*------------------------------
+ Text styles
+------------------------------*/
+.list-no-style{
+    list-style: none;
+}
+
+/*------------------------------
+positioning
+------------------------------*/
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
+}

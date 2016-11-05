@@ -1,0 +1,315 @@
+/*---WRAPPER---*//*---WRAPPER---*//*---WRAPPER---*//*---WRAPPER---*/
+/*---WRAPPER---*//*---WRAPPER---*//*---WRAPPER---*//*---WRAPPER---*/
+
+body {
+	background-color: #FFF;
+}
+
+/* Header */
+/* Header */
+/* Header */
+
+#header {
+	box-shadow:0 1px 10px 0 #353537;
+	-webkit-box-shadow:  0 1px 10px 0 #353537;
+}
+
+#header .wrapper {
+	background-image: none;
+	margin-bottom:-5px;
+	margin-top: 0;
+	padding-top: 15px;
+}
+
+#header,
+#header .wrapper {
+	border-bottom-width:5px;
+}
+
+/* Header Nav */
+#header .nav-container {
+	float: right;
+}
+#header .nav div.nav-spacer {
+	width:100px;
+}
+
+#header .nav li {
+	margin: 0 0 0 3px;
+}
+
+#header .nav li.here {	
+	border:0;
+}
+
+#header .nav li a {
+	border:1px solid #e6e7e8;
+	border-radius:4px 4px 0 0;
+}
+
+#header .nav li.here a {
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;	
+}
+
+/* Section 1 & 2 General */
+/* Section 1 & 2 General */
+/* Section 1 & 2 General */
+#section2 { 
+	margin-left: -1px;
+}
+
+/* Utility nav */
+/* Utility nav */
+/* Utility nav */
+.utility-nav {
+	padding: 0;
+}
+
+.utility-nav a {
+	padding: 0 5px;
+}
+
+/* Header Utility Nav */
+#header .utility-nav a:hover {
+	text-decoration: underline;
+}
+
+/* Nav */
+#section1 .nav li,#section1 .nav li a {
+	color: #4C5A52;
+}
+
+#section1 .nav li a:hover,
+#section1 .nav li li a:hover,
+#section1 .nav li a.here {
+	text-decoration: underline;
+}
+
+#section1 .nav li a {
+	font-weight: bold;
+	/*text-decoration: none;*/
+}
+
+/* Login Box */
+#section1 #idm_header{
+	margin-bottom:15px;
+}
+
+#section1 .nav li {
+	background-color: #FFF;
+}
+
+#section1 /* Left Sidebar */ {
+	border-right: 1px solid #CCC;
+}
+
+#section1, 
+#section2 {
+	margin-bottom: 20px;
+}
+
+#section2 { 
+	border-left: 1px solid #CCC;
+	padding: 10px 0 0 20px;
+}
+
+/* Logged In State */
+#section1 .logged-in {
+	background-color:#E6E7E8;
+}
+
+/* Content Genaral */
+/* Content Genaral */
+/* Content Genaral */
+#content {
+	background-image: url(../img/content-bg-shadow.png);
+}
+
+/* Footer */
+/* Footer */
+/* Footer */
+#footer {
+	background-image: url(../img/footer-bg.png);
+}
+
+#footer .wrapper {
+	background-image: none;
+}
+
+/*---CONTENT---*//*---CONTENT---*//*---CONTENT---*//*---CONTENT---*/
+/*---CONTENT---*//*---CONTENT---*//*---CONTENT---*//*---CONTENT---*/
+
+/* Text */
+/* These selectors had the global site color applied throughout the style sheet. 
+I have consolidated them into one rule for ease of update. Some may no longer be needed. 
+TR, 11/29/12 */
+.main-content,.main-content h3 a,.main-content a,#breadcrumbs a,#breadcrumbs .last,.main-content thead tr.tabs th,.main-content .boxes .box .content,.main-content .accounts .account .name a {
+	color: #4c5a52;
+}
+
+/* The :link pseudo-selector is needed to avoid underlining named-anchors like:
+ <a name="named_anchor">Named Anchor</a>
+ Additionally, the appropriate changes were made to button styles to keep this
+ rule from overriding those rules. */
+.main-content a:link:hover {
+	text-decoration: none;
+}
+
+/* Alert titles and messages */
+.main-content p.alert {
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/* H1, Page Title */
+/* H1, Page Title */
+/* H1, Page Title */
+.main-content h1.page-title {
+	-webkit-border-radius: 0px 5px 5px 0px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+/* Breadcrumbs */
+/* Breadcrumbs */
+/* Breadcrumbs */
+#breadcrumbs {
+	margin: -10px 0 0 0;
+}
+
+/* Text Promotion */
+/* Text Promotion */
+/* Text Promotion */
+#section2 .text-promo {
+	margin-top: -6px;
+}
+
+/* Tables */
+/* Tables */
+/* Tables */
+.main-content table.borders-on {
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+/* Table header */
+.main-content thead.light td,.main-content thead.light th {
+	background-color: #DFDFDF;
+	-webkit-border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.main-content thead td,.main-content thead th {
+	background-color: #DFDFDF;
+}
+
+/* table features */
+.main-content td.tab-info.right .account-balance {
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/* Buttons ***** */
+/* Buttons ***** */
+/* Buttons ***** */
+#section1 a.btn,#section1 li.btn-login .btn,.main-content a.btn,.main-content button.btn,.main-content span.btn input{ 
+	-webkit-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+#section1 a.btn,#section1 span.btn,.main-content a.btn,.main-content button.btn,.main-content span.btn input{
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/* Tab Panes */
+/* Tab Panes */
+/* Tab Panes */
+.main-content .tab-panes .tabs a {
+	color: #666;
+	-webkit-border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.main-content .tab-panes .tabs a.current {
+	-webkit-border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0px 0px;
+}
+
+.main-content .tab-panes .pane {
+	-webkit-border-radius: 0px 4px 4px 4px;
+	border-radius: 0px 4px 4px 4px;
+}
+
+.main-content .tab-panes .tabs a:hover {
+	color: #d28e00;
+}
+
+/* Option Selector */
+/* Option Selector */
+/* Option Selector */
+.main-content .option-selector {
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+/* Account Alerts */
+/* Account Alerts */
+/* Account Alerts */
+.main-content .account-alerts .alert-list .checkbox li,.main-content .account-alerts .alert-list.summary li{
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+/* BillPay (Make Payments) */
+/* BillPay (Make Payments) */
+/* BillPay (Make Payments) */
+/* Remove payment (the "X" button) */
+.main-content .billpay-container .remove {
+	background: url(../img/trashcan.png) no-repeat;
+}
+
+.main-content .billpay-container .remove a {
+	color: #4aaa42;
+}
+
+.main-content .billpay-container .remove a:hover {
+	color: #d28e00;
+	text-decoration: none;
+}
+
+/*---FORMS---*//*---FORMS---*//*---FORMS---*//*---FORMS---*/
+/*---FORMS---*//*---FORMS---*//*---FORMS---*//*---FORMS---*/
+
+/* General Form Styles */
+/* General Form Styles */
+/* Genearl Form Styles */
+.main-content form,
+.form-style {
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin:0 -2px 10px;
+}
+
+/*---CAROUSEL-ACCOUNT-DETAIL---*//*---CAROUSEL-ACCOUNT-DETAIL---*/
+/*---CAROUSEL-ACCOUNT-DETAIL---*//*---CAROUSEL-ACCOUNT-DETAIL---*/
+.account-selector h3 {
+    border-radius: 4px 4px 0px 0px;
+    -webkit-border-radius: 4px 4px 0px 0px;
+}
+
+.account-selector ul.no-carousel,
+.account-selector .jcarousel-container {
+	border-radius: 0px 0px 4px 4px;
+	-webkit-border-radius: 0px 0px 4px 4px;
+}
+
+/*---PAST DUE INTERSTITIAL PAGE---*//*---PAST DUE INTERSTITIAL PAGE---*/
+/*---PAST DUE INTERSTITIAL PAGE---*//*---PAST DUE INTERSTITIAL PAGE---*/
+/* h1.title {
+   background-color:#006633;
+} */
