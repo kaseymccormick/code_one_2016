@@ -59,3 +59,19 @@ li {
       -webkit-border-radius: 4px 4px 0px 0px;
       border-radius: 4px 4px 0 0;
   }
+  
+/*Section 2*/
+  .section-2 {
+      height: 465px;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      width: 960px;
+  }
+  
+  #bg{
+    width: 960px;
+    height: 465px;
+  }
+  
+ 
