@@ -165,6 +165,7 @@ positioning
     padding-top:40px;
     padding-bottom:10px;
 }
+
 /*------------------------------
 Overwite pure
 ------------------------------*/
@@ -174,7 +175,7 @@ Overwite pure
 
 /*CHart*/
 .chart {
-    background: conic-gradient(#f15854 4%, #4d4d4d 0 8%, #5da5da 0 17%, #decf3f 0 48%, #b276b2 0 54%, #faa43a 0);
+    background: conic-gradient(#ffaa4d 13%, #f3dd6d 0 17%, #007396 0 );
     border-radius: 50%;
     width: 50%;
     height: 0;
@@ -205,24 +206,16 @@ Overwite pure
 .choice {
     padding-left: 10px;
 }
-.red {
-    background: #f15854;
-}
-.gray {
-    background: #4d4d4d;
-}
 .blue {
-    background: #5da5da;
+    background: #007396;
 }
 .yellow {
-    background: #decf3f;
+    background: #f3dd6d;
 }
-.purple {
-    background: #b276b2;
+.peach {
+    background: #ffaa4d;
 }
-.orange {
-    background: #faa43a;
-}
+
 * {
     box-sizing: border-box;
 }
