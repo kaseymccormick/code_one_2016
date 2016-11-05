@@ -1,3 +1,6 @@
+/*------------------------------
+colors
+------------------------------*/
 .fn-green-background{
     background-color: #006633;
 }
@@ -57,8 +60,15 @@ Logged in, dashboard styles
 .list-no-style{
     list-style: none;
 }
+h1{
+
+}
+h2{
+    color:#006633;
+}
 h4{
     font-size: 12px;
+
 }
 h4 i{
     font-size: 14px;
@@ -68,13 +78,54 @@ note{
     font-size: 10px;
     font-style: italic;
 }
+/*
+Bisected header line
+*/
+
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+}
+.fancy-small{
+    text-align: left;
+}
+.fancy span {
+    display: inline-block;
+    position: relative;
+    color:#4aaa42;
+}
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    border-top: 3px solid #4aaa42;
+    top: 4px;
+    width: 84%;
+}
+.fancy-small span:before,
+.fancy-small span:after{
+    width: 77%;
+}
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
 /*------------------------------
 Dashboard
 ------------------------------*/
 .dashboard__card{
     border: 1px solid #CCCCCC;
     box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important ;
-    margin:10px 5px;
+    margin:15px 14px 0px 10px;
+    min-height: 230px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;;
 }
 .widget-list__item{
     padding: 20px;
@@ -98,19 +149,6 @@ Dashboard dragability
     minimum-height:220px;
 }
 
-
-
-#playlist {
-  background-color: #fefefe;
-}
-#playlist {
-    margin: 5px;
-    opacity: 0.9;
-}
-
-
-
-
 /*------------------------------
 positioning
 ------------------------------*/
@@ -120,7 +158,19 @@ positioning
 .float-left{
     float: left;
 }
-
+.padding-2020010{
+    padding: 20px 20px 0px 10px;
+}
+.padding-40010{
+    padding-top:40px;
+    padding-bottom:10px;
+}
+/*------------------------------
+Overwite pure
+------------------------------*/
+.pure-u-23-24 {
+    width: 94.8333%;
+}
 /*------------------------------
 doughnut
 ------------------------------*/
