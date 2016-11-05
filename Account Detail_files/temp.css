@@ -1,0 +1,24 @@
+/* Account List */
+/* Account List */
+/* Account List */
+
+.update-account-list{
+	list-style-type:none;
+	padding:0 0 0 20px;
+}
+.update-account-list li{
+	
+}
+/* End of Account List */
+/* --------------------------------------------------------------------- */
+
+/* table features */
+.main-content table.no-borders td,
+.main-content tr.no-borders td{
+	border-bottom:none;
+}
+
+
+
+/* End of Transactions Widget */
+/* --------------------------------------------------------------------- */

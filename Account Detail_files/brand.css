@@ -1,0 +1,259 @@
+/* Retail Brand CSS, contents
+	Border Colors
+	Background Colors
+	Background Images
+	Gradients	
+	Text Colors
+*/
+
+/* Brand Scheme */
+/* Brand Scheme */
+/* Brand Scheme */
+
+/* 
+This section is a collection of all colors used to brand the tran application. 
+The classes below provide a visual color guide on the Brand Scheme reference page here:  
+
+	"/ConsumerWeb/brandfolder/schema/view/schema" 
+
+Please update the Brand Scheme reference page if new colors are added. 
+*/
+	.brand-main 			{background:#4AAA42;}
+	.brand-secondary 		{background:#C1D82F;}
+	.brand-shade1 			{background:#063;}
+	.brand-shade2 			{background:#004D26;}
+	.brand-shade3 			{background:#00351A;}
+	.brand-compliment	 	{background:#D28E00;}
+	.brand-compliment-dark 	{background:#836119;}
+	.brand-tertiary 		{background:#0A6496;}
+	.brand-tertiary-dark	{background:#19465A;}
+	.text-on-dark			{background-color:#FFF;} 			
+	
+/* End, Brand Scheme */
+
+/* Background Color */
+/* Background Color */
+/* Background Color */
+#header .nav li.here a,
+#section1 .logged-in .btn-login span.btn,
+#section1 #login .btn-login span.btn,
+.main-content .account-list-tab.brand td,
+.main-content thead.brand td,
+.main-content thead.brand th,
+.main-content .btn.brand,
+.main-content span.btn.brand input,
+.main-content #smc #calendarDiv,
+.main-content #smc #calendar tr#controlRow td,
+.main-content #smc #calendar td#selectedDay{
+	background-color: #4AAA42;
+}
+.main-content .icons.brand img,
+.main-content ul.icons.brand li,
+.main-content td .icon.brand,
+.icon.expand,
+.icon.collapse,
+.account-selector .jcarousel-next, 
+.account-selector .jcarousel-prev,
+.info-box.notifications li.UPDATE_INFORMATION .icon,
+.info-box.notifications li.CARD_ACTIVATION .icon,
+.info-box.notifications li.SMC_MSG_WAITING .icon,
+.info-box.notifications li.CARD_OVERLIMIT .icon,
+.info-box.notifications li.PAYMENT_DUE .icon,
+.info-box.notifications li.UPDATE_INCOME .icon,
+.info-box.notifications li.UPDATE_OVERDRAFT .icon {
+	background-color: #4AAA42;
+}
+
+#section1 .logged-in h2,
+.interstitial h1.title,
+.main-content h1.page-title img,
+.main-content td.tab-info.right .account-balance,
+.main-content .account-selector h3,
+.main-content table.call-out th,
+.main-content table.call-out.colored,
+.main-content table.call-out.colored td,
+.tooltip {
+	background-color: #063;	
+}
+#section1 .info-box h3,
+.main-content .btn.add,
+.main-content .progressbar table td.current {
+	background-color: #D28E00;
+}
+/* End, Background colors */
+
+/* Background Images */
+/* Background Images */
+/* Background Images */
+#section1 .static-links li.security-center a {
+	background-image: url(../img/security-center-icon.png);
+}
+.main-content li,
+.pop-up.form-style .agreement-scroller ul li,
+.detailSection td.notification div.disclosureBullet {
+	background-image: url(../img/bullet-first-level-li.png);
+}
+.main-content .marketing-banner.custom span {
+	background-image: url(../img/custom-banner-bg.png);
+}
+/* End, Background Images */
+
+/* Borders */
+/* Borders */
+/* Borders */
+
+#section1 .cross-sell .ad,
+#header .wrapper,
+.detailSection .offerRow td div {
+	border-color: #4AAA42;
+}
+.main-content .tab-panes .pane, 
+.main-content .tab-panes .pane.nopadding {
+	border-top-color: #4AAA42;
+}
+#header {
+	border-color: #C1D82F;
+}
+.main-content table.branded th,
+.main-content .transaction-list th {
+	border-color:#00351A;
+}
+.main-content table.litebranded th {
+	border-color:#255521; 
+}
+#section1 .logged-in .btn-login span.btn,
+#section1 #login .btn-login span.btn,
+.main-content .btn.brand,
+.main-content span.btn.brand input,
+.callout-window {
+	border-color: #063;
+}
+.main-content .btn.add {
+	border-color: #836119;
+}
+.tooltip {
+	border-color: #FFF;
+}
+/* End, Borders */
+
+/* Gradients */
+/* Gradients */
+/* Gradients */
+
+.main-content .tab-panes .tabs a.current,
+#header .nav li.here a {
+	background: #4AAA42 repeat-x;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%) #4aaa42 repeat-x; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0))) #4aaa42; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%) #4aaa42 repeat-x; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%) #4aaa42 repeat-x; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%) #4aaa42 repeat-x; /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%) #4aaa42 repeat-x; /* W3C */
+}
+.main-content .marketing-banner.custom,
+.main-content table.branded th,
+.main-content .transaction-list th {
+	background:#063;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%) #006633; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))) #006633; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%) #006633; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%) #006633; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%) #006633; /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%) #006633; /* W3C */
+}
+#section1 .info-box.notification h3 {
+	background: #D28E00;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%) #d28e00; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))) #d28e00; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%) #d28e00; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%) #d28e00; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%) #d28e00; /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%) #d28e00; /* W3C */	
+}
+.main-content .marketing-banner.custom.banknews {
+background: rgb(165,146,132); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(165,146,132,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(165,146,132,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(165,146,132,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(165,146,132,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(165,146,132,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(165,146,132,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a59284', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+/* Gradient - Borders */
+
+	/* for Brand main */
+	.main-content .marketing-banner.custom {
+		border-color: #004D26; /* mid range of gradient */
+	}
+	/* for Brand tertiary */
+	.main-content .marketing-banner.custom.banknews {
+		border-color: #c2c2c2; /* mid range of gradient */
+	}
+
+/* End, Gradients */
+
+/* Text Color */
+/* Text Color */
+/* Text Color */
+.main-content h1,
+.main-content h1 a,
+.main-content h1 a:hover,
+#section2 .text-promo a,
+.main-content a:hover,
+.main-content .widget a,
+.main-content .toggle-trigger,
+#section1 .static-links li a,
+ul.product-spotlight a.link,
+.smc-main-content a#expand,
+.smc-main-content a#collapse,
+.interstitial .contact h2,
+#overdraft-protection-account-selection h3,
+#overdraft-service-selection h3,
+.detailSection tr.offerRow td.offerCol span {
+	color: #4AAA42;
+}
+
+#section1 .nav li a.here,
+#section1 .weather-temp,
+.account-selector li.here .account-name a,
+.main-content .page-header-text h1,
+.main-content h1.page-title,
+.main-content #smc .sub-page-label,
+.main-content h2,
+.main-content h2 a {
+	color: #063;
+}
+.main-content .marketing-banner.custom p {
+	color: #C1D82F;
+}
+#section1 .nav li a:hover,
+#header .nav li a:hover,
+#section1 .static-links li a:hover,
+.main-content h1 a:hover,
+.main-content a:hover,
+.main-content ul.product-spotlight a:hover,
+.main-content .smc-utility-nav li.here a,
+#section2 .text-promo a:hover {
+	color: #D28E00;
+}
+
+#section1 .info-box h3,
+#section1 .logged-in h2,
+.main-content .header-banner,
+#header .nav li.here a,
+.main-content .marketing-banner.custom h2,
+.main-content table.branded th,
+.main-content .transaction-list th,
+.main-content .account-list-tab.brand td,
+.main-content td.tab-info.right .account-balance,
+.main-content thead.brand td,
+.main-content thead.brand th,
+.main-content #smc #calendarDiv,
+.main-content #smc #calendar tr#controlRow td,
+.main-content #smc #calendar td#selectedDay,
+.main-content .account-list-tab.brand td a,
+.tooltip {
+	color: #FFF;
+}
+/* End, Text Color */ 
