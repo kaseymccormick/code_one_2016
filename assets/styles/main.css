@@ -22,20 +22,42 @@
 .warm-yellow{
 
 }
-#bg {
-    position: fixed;
-    top: 0;
-    left: 0;
 
-    /* Preserve aspet ratio */
-    min-width: 100%;
-    min-height: 100%;
-}
 
 /*------------------------------
 Logged in, dashboard styles
 ------------------------------*/
 .user-bar{
     height: 40px;
-    background-color: #efefef;
+    background:#006633;
+    color: #fff;
+/*background:linear-gradient( 0deg, #747570, #efefef )*/
+}
+.user-bar ul{
+    margin-top: -7px;
+}
+.user-bar__help li{
+    float:left;
+    padding: 5px 10px;
+    border-right:1px solid #ffffff;
+}
+
+.user-bar__help li:last-child {
+    border: none;
+}
+/*------------------------------
+ Text styles
+------------------------------*/
+.list-no-style{
+    list-style: none;
+}
+
+/*------------------------------
+positioning
+------------------------------*/
+.float-right{
+    float: right;
+}
+.float-left{
+    float: left;
 }
