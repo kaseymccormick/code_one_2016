@@ -22,7 +22,7 @@
           <li class="category"><a href="">ATM Locator</a></li>
           <li class="category"><a href="">Branch Locator</a></li>
           <li class="category"><a href="">Book an Appointment</a></li>
-          <li class="category"><a href="">About</a></li>
+          <li class="category"><a href="https://www.firstnational.com/site/about-us/">About</a></li>
         </ul>
       </div>
     </div>
@@ -54,10 +54,10 @@
     </div>
     </div>
   <div class="pure-u-1-1">
-    <h2 class="center">Would you like to learn more about:</h2>
+    <h2 class="center">Would brings you here?</h2>
     <div class="pure-g flex">
       <div class="pure-u-1-2">
-        <h2 class="flex"><a href="#personal-step" id="personal">Personal Banking</a></h2>
+        <h2 class="flex"><a href="#personal-questions" onClick="$('#personal-step').toggle();">Personal Banking</a></h2>
       </div>
       <div class="pure-u-1-2">
         <h2 class="flex"><a href="">Business Banking</a></h2>
@@ -66,26 +66,26 @@
   </div>
   <div class="pure-u-1-1">
     <div class="pure-g" id="personal-step" style="display: none">
-      <a name="personal-step"></a> 
+      <a name="personal-questions"></a> 
       <div class="pure-u-1-3">
-        <h2 class="flex"><a href="#account-step" id="account">Account</a></h2>
+        <h2 class="flex"><a href="#account-questions" onClick="$('#account-step').toggle();">Account</a></h2>
       </div>
       <div class="pure-u-1-3">
-        <h2 class="flex"><a href="#loan-step" id="loan">Loan</a></h2>
+        <h2 class="flex"><a href="#loan-questions" onClick="$('#loan-step').toggle();">Loan</a></h2>
       </div>
       <div class="pure-u-1-3">
-        <h2 class="flex"><a href="#cc-step" id="cc">Credit Card</a></h2>
+        <h2 class="flex"><a href="#cc-questions" onClick="$('#cc-step').toggle();">Credit Card</a></h2>
       </div>
     </div>
   </div>
   <div class="pure-u-1-1">
    <div class="pure-g" id="account-step" style="display: none">
-     <a name="account-step"></a> 
+     <a name="account-questions"></a> 
      <div class="pure-u-1-3">
        <h2 class="flex"><a href="">Checking</a></h2>
      </div>
      <div class="pure-u-1-3">
-        <h2 class="flex"><a href="#savings-step" id="savings">Savings</a></h2>
+        <h2 class="flex"><a href="#savings-questions" onClick="$('#savings-step').toggle();">Savings</a></h2>
      </div>
      <div class="pure-u-1-3">
        <h2 class="flex"><a href="">Investment</a></h2>
@@ -94,7 +94,7 @@
   </div>
   <div class="pure-u-1-1">
    <div class="pure-g" id="loan-step" style="display: none">
-     <a name="loan-step"></a> 
+     <a name="loan-questions"></a> 
      <div class="pure-u-1-3">
       <h2 class="flex"><a href="">Home</a></h2>
      </div>
@@ -107,7 +107,7 @@
    </div>
   </div>
   <div class="pure-u-1-1" id="cc-step" style="display: none">
-    <a name="cc-step"></a> 
+    <a name="cc-questions"></a> 
     <h1 class="center">What's more important to you?</h1>
    <div class="pure-g">
      <div class="pure-u-1-2">
@@ -119,7 +119,7 @@
     </div>
   </div>    
   <div class="pure-u-1-1" id="savings-step" style="display: none">
-    <a name="savings-step"></a> 
+    <a name="savings-questions"></a> 
     <h1 class="center">What Kind of Savings account are you interested in?</h1>
     <div class="pure-g">
       <div class="pure-u-1-4">
@@ -145,45 +145,6 @@
     </div>
   </div>
 </div>
-        <script>
-        $( "#personal" ).click(function() {
-  $( "#personal-step" ).toggle( "slow", function() {
-    // Animation complete.
-  });
-});
-        </script>
-
-        <script>
-        $( "#account" ).click(function() {
-  $( "#account-step" ).toggle( "slow", function() {
-    // Animation complete.
-  });
-});
-        </script>
-
-        <script>
-        $( "#loan" ).click(function() {
-  $( "#loan-step" ).toggle( "slow", function() {
-    // Animation complete.
-  });
-});
-        </script>
-
-             <script>
-             $( "#cc" ).click(function() {
-       $( "#cc-step" ).toggle( "slow", function() {
-         // Animation complete.
-       });
-     });
-             </script>
-
-        <script>
-        $( "#savings" ).click(function() {
-  $( "#savings-step" ).toggle( "slow", function() {
-    // Animation complete.
-  });
-});
-        </script>
 </body>
 </html>
 
