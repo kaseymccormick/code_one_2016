@@ -1,11 +1,11 @@
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
 
 li {
   display: inline-flex;
+}
+
+.logo{
+  display: block;
+  margin-top: 20px;
 }
 
 .section-1{
@@ -37,7 +37,7 @@ li {
   .nav div.category {
       bottom: 5px;
       position: absolute;
-      right: 0;
+      right: -116px;
       z-index: 2000;
   }
   
