@@ -267,6 +267,7 @@ Overwite pure
 .flex-me {
     display: flex;
     justify-content: center;
-    padding-top: 7px;
+    align-items: center;
+    height: 230px;
   }
     
