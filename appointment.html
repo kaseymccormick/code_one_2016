@@ -28,11 +28,8 @@
 
 <!-- Modal HTML embedded directly into document -->
   <div id="share" style="display:none;">
-    <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
+    <p>Share<a href="#" rel="modal:close" style="float:right;">X</a></p>
   </div>
-
-  <!-- Link to open the modal -->
-  <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
 
 <div class="appointment-header fn-green-background">
   <i class="fa fa-address-book-o icon fa-2x"></i>
@@ -45,7 +42,16 @@
 
 <form class="appointment-form" action="personal/creditCards.html">
   <div class="input-line"><input type="text" id="datepicker" placeholder="Date"></div>
-  <button>Submit</button>
+  <div class="input-line">
+    <select>
+      <option>Apples</option>
+      <option selected>Pineapples</option>
+      <option>Chocklate</option>
+      <option>Pancakes</option>
+    </select>
+    <div class="form-helper"><div class='aria'><i class='fa fa-location-arrow fa-2x'></i></div></div>
+  </div>
+  <button class="form-submit fn-green-background">Submit</button>
 </form>
 </body>
  

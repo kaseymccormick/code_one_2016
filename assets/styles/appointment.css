@@ -10,7 +10,7 @@ table {
 	background-position: top;
 }
 
-.ui-datepicker-trigger {
+.ui-datepicker-trigger, .form-helper {
     width: 42px;
 	height: auto;
 	background-color: white;
@@ -21,7 +21,7 @@ table {
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
     color: rgba(0,0,0,.54);
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
     text-align: center;
     line-height: 20px;
@@ -92,6 +92,51 @@ table {
 
 }
 
+
+
+.appointment-form select {
+    margin: 50px 0 50px 0;
+    width: 80%;
+    padding: 5px 35px 5px 5px;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+} 
+/*target Internet Explorer 9 and Internet Explorer 10:*/
+@media screen and (min-width:0\0) { 
+    select {
+        background:none;
+        padding: 5px;
+    }
+}
+}
 .appointment-form .aria {
 
+}
+
+#share {
+
+    background-color: rgb(255,255,255);
+    border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 5px 26px 0px rgba(0,0,0,0.22),0px 20px 28px 0px rgba(0,0,0,0.30);
+    box-shadow: 0px 5px 26px 0px rgba(0,0,0,0.22),0px 20px 28px 0px rgba(0,0,0,0.30);
+    cursor: default;
+    padding: 21px 24px 24px 24px;
+    width: 220px;
+    height: 263px;
+    z-index: 1002;
+}
+
+.form-submit{
+    border-radius: 0;
+    padding: 12 24;
+    color: white;
+    border: none;
+    font-size: 14px;
 }
