@@ -281,7 +281,7 @@ Overwite pure
     box-sizing: border-box;
   }
 
-<<<<<<< HEAD
+
 }
     .slider-img, .login-box{
         display: inline-block;
@@ -293,7 +293,7 @@ Overwite pure
 a, a:visited{
     color: #006633;
 }
-=======
+
 .flex-me {
     display: flex;
     justify-content: center;
@@ -324,4 +324,3 @@ a, a:visited{
   #section1 .cross-sell .ad {
     margin-left: 0px;
   }
->>>>>>> 7d44b2ab10166b7a28928f038762da5bbbf2be40
