@@ -302,7 +302,11 @@
           			"lng": parseFloat(branches[i]["-lng"])
           		},
           		icon: icons.branch.icon,
-          		title: branches[i].label,
+          		label: {
+          			text: branches[i].label,
+          			fontFamily: "Lucida Grande",
+          			fontSize: "11px"
+          		},
           		map: map
         	});
         }
