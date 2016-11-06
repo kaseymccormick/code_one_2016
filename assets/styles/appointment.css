@@ -1,3 +1,7 @@
+*{
+    border-spacing: border-box;
+}
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -28,7 +32,7 @@ table {
 }
 
 .appointment-header {
-    height: 64px;
+    height: 80px;
     color: #fff;
     line-height: 1.2;
     text-align: left;
@@ -75,25 +79,25 @@ table {
 
 .appointment-form input {
     border: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 14px 5px;
+    margin: 20px 5px 20px 0px;
     height: auto;
-    width: 80%;
+    width: 78%;
     outline: none;
     color: rgba(0,0,0,0.87);
     display: inline-block;
     font-size: 14px;
     height: 16px;
-    padding: 14px 0px;
     text-overflow: ellipsis;
 
 }
 
 
 .appointment-form select {
-    margin: 50px 0 50px 0;
-    width: 80%;
-    padding: 5px 35px 5px 5px;
+    width: 78%;
+    height: 16px;
+    margin: 20px 0 20px 0;
+    padding: 0px 5px;
     font-size: 14px;
     background-color: rgb(255, 255, 255);
     border: none;
@@ -135,4 +139,9 @@ table {
     color: white;
     border: none;
     font-size: 14px;
+}
+
+.well {
+    height: 200px;
+    box-shadow: inset 2px 2px 1px rgba(0,0,0,.05);
 }
