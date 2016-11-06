@@ -1,0 +1,120 @@
+/* container for slides */
+.main-content .images {
+/* 2012.04.18
+  border:1px solid #ccc;
+*/
+  cursor:pointer; /* CSS3 tweaks for modern browsers */
+  float:left;
+  height:300px;
+  position:relative;
+  width:560px;
+  
+/* 2012.04.18
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+
+  -moz-box-shadow:0 0 25px #666;
+  -webkit-box-shadow:0 0 25px #666;
+*/
+}
+
+/* single slide */
+.main-content .images div {
+  display:none;
+  height:256px;
+  left:0;
+  margin:7px;
+  padding:15px 30px 15px 15px;
+  position:absolute;
+  top:0;
+}
+
+/* header */
+.main-content .images h3 {
+  color:#456;
+  font-weight:normal;
+  margin:0 0 20px 0;
+}
+
+/* tabs (those little circles below slides) */
+.main-content .slidetabs {
+/* 2012.04/18
+  clear:both;
+  margin-left:310px;
+*/
+  border:1px solid #f00;
+  left:260px;
+  position:absolute;
+  top:280px;
+}
+
+/* single tab */
+.main-content .slidetabs a {
+  background:url(/config/img/test/navigator.png) 0 0 no-repeat;
+  display:block;
+  float:left;
+  font-size:1px;
+  height:8px;
+  margin:3px;
+  width:8px;
+}
+
+/* mouseover state */
+.main-content .slidetabs a:hover {
+  background-position:0 -8px;
+}
+
+/* active state (current page state) */
+.main-content .slidetabs a.current {
+  background-position:0 -16px;
+}
+
+/* prev and next buttons */
+.main-content .forward, 
+.main-content .backward {
+  background:url(/config/img/test/hori_large.png) #fff no-repeat;
+  cursor:pointer;
+  display:block;
+  float:left;
+  font-size:1px;
+  height:30px;
+  margin-top:140px;
+  text-indent:-9999em;
+  width:30px;
+}
+
+/* next */
+.main-content .forward {
+  background-position:0 -30px;
+  clear:right;
+}
+
+.main-content .forward:hover {
+  background-position:-30px -30px;
+}
+
+.main-content .forward:active	{
+  background-position:-60px -30px;
+}
+
+/* prev */
+.main-content .backward:hover	{
+  background-position:-30px 0;
+}
+
+.main-content .backward:active {
+  background-position:-60px 0;
+}
+
+/* disabled navigational button. is not needed when tabs are
+   configured with rotate: true */
+.main-content .disabled {
+  visibility:hidden !important;
+}
+
+
+
+/* 2012.04.18 FNN styles */
+.main-content .slideshow {
+  width:562px;
+}

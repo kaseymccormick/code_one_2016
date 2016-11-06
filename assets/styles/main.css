@@ -1,3 +1,6 @@
+/*------------------------------
+colors
+------------------------------*/
 .fn-green-background{
     background-color: #006633;
 }
@@ -19,6 +22,9 @@
 .warm-merlot{
 
 }
+.warm-merlot-text{
+    color: #7c2529;
+}
 .warm-yellow{
 
 }
@@ -29,12 +35,12 @@ Logged in, dashboard styles
 ------------------------------*/
 .user-bar{
     height: 40px;
-    background:#006633;
+    background:linear-gradient(0deg,#006633, 40%, #4aaa42);
     color: #fff;
 /*background:linear-gradient( 0deg, #747570, #efefef )*/
 }
 .user-bar ul{
-    margin-top: -7px;
+    margin-top: -20px;
 }
 .user-bar__help li{
     float:left;
@@ -45,11 +51,150 @@ Logged in, dashboard styles
 .user-bar__help li:last-child {
     border: none;
 }
+.user-bar__profile-info{
+    padding-top: 12px;
+}
+.user-bar__profile-info{
+    padding-left: 10px;
+}
 /*------------------------------
  Text styles
 ------------------------------*/
 .list-no-style{
     list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+
+}
+h2{
+    color:#006633;
+}
+h4{
+    font-size: 12px;
+
+}
+h4 i{
+    font-size: 14px;
+
+}
+note{
+    font-size: 10px;
+    font-style: italic;
+}
+.currency-in-table{
+    text-align: right;
+    padding-right: 15px;
+}
+
+.small{
+  font-size: initial;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+/*------------------------------
+ Table styles
+------------------------------*/
+.table-header{
+    background: #ccc;
+}
+.table-header td{
+font-weight: bold;
+}
+/*td{*/
+    /*min-width: 100px;*/
+/*}*/
+table tr{
+    height: 25px;
+    border-bottom: 1px solid;
+}
+
+table td {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+table th {
+      padding: 5px 5px 5px 5px;
+}
+/*------------------------------
+Bisected header line
+------------------------------*/
+
+
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+}
+.fancy-small{
+    text-align: left;
+}
+.fancy span {
+    display: inline-block;
+    position: relative;
+    color:#4aaa42;
+}
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    border-top: 3px solid #4aaa42;
+    top: 4px;
+    width: 84%;
+}
+.fancy-small span:before,
+.fancy-small span:after{
+    width: 77%;
+}
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+/*------------------------------
+Dashboard
+------------------------------*/
+.dashboard__card{
+    border: 1px solid #CCCCCC;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important ;
+    margin:15px 14px 0px 10px;
+    min-height: 230px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;;
+}
+.card__header{
+padding:15px 0px 0px 10px;
+}
+.card__content{
+    padding: 10px;
+    margin-top: 20px;
+}
+.widget-list__item{
+    padding: 20px;
+    border: solid 1px #CCCCCC;
+    line-height: 20px;
+    background: whtie;
+}
+/*------------------------------
+Dashboard dragability
+------------------------------*/
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+.min-height-200{
+    minimum-height:220px;
 }
 
 /*------------------------------
@@ -61,3 +206,136 @@ positioning
 .float-left{
     float: left;
 }
+.padding-2020010{
+    padding: 20px 20px 0px 10px;
+}
+.padding-40010{
+    padding-top:40px;
+    padding-bottom:10px;
+}
+
+/*------------------------------
+Overwite pure
+------------------------------*/
+.pure-u-23-24 {
+    width: 94.8333%;
+}
+
+/*CHart*/
+.chart {
+    background: conic-gradient(#ffaa4d 40%, #007396 0 56%,  #f3dd6d 0 );
+    border-radius: 50%;
+    width: 50%;
+    height: 0;
+    padding-top: 50%;
+    float: left;
+    padding-right: 20px;
+
+}
+.key {
+    width: 50%;
+    float: right;
+    list-style: none;
+    display: table;
+    border-collapse: separate;
+    padding-left: 5px;
+}
+.key > li {
+    display: table-row;
+}
+.key > li > * {
+    display: table-cell;
+    border-bottom: 12px solid #fff;
+}
+.percent {
+    color: #fff;
+    padding: 10px 2px;
+    text-shadow: 0 0 1px #000;
+    text-align: center;
+}
+.choice {
+    padding-left: 10px;
+}
+.blue {
+    background: #007396;
+}
+.yellow {
+    background: #f3dd6d;
+}
+.peach {
+    background: #ffaa4d;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+.flex-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+  }
+  
+  .argh{
+
+    padding-top: 20px;
+    padding-bottom: 12px;
+    overflow: hidden;
+        width: 79%;
+  }
+    
+  .widget-list{
+    display: flex;
+    flex-direction: column;
+    width: 105%;
+        margin-left: 27px;
+  }
+  
+  #my-ad{
+    width: 91%;
+        margin-left: 18px;
+  }
+  
+  #section1 .cross-sell .ad {
+    margin-left: 0px;
+  }
+  
+  .weatherh5{
+    font-size: large;
+  }
+
+  .choice{
+      border:1px solid #CCCCCC;
+      margin-right: 10px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      margin-top: 10px;
+  }
+  .choice:hover{
+      background: #efefef;
+      box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important ;
+  }
+  
+  .dropzone:hover{
+      background: #efefef;
+      box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important ;
+  }
+  
+  .key > li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: baseline;
+      
+  }
+  
+  .key > li > *{
+    padding-left: 4px;
+    padding-right: 4px
+  }
+  
+  .blue {
+      background: #007396;
+      padding-right: 8px;
+  }
