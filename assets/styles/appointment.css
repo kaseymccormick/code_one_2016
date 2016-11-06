@@ -4,6 +4,7 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
 }
 
 table {
@@ -158,4 +159,83 @@ table {
     border-radius: 5px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     padding: 10px;
+}
+
+
+/*header*/
+.section-1{
+    border-bottom-color: #c1d82f;
+    background-color: #fff;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    height: 106px;
+    overflow: visible;
+    position: relative;
+    z-index: 1000;
+    -webkit-box-shadow: 0 1px 10px 0 #333;
+    box-shadow: 0 1px 10px 0 #333;
+    width: 100%;
+}
+
+.nav {
+    border-bottom-color: #4aaa42;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    height: 106px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    width: 960px;
+    z-index: 1000;
+}
+
+.nav div.category {
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+    z-index: 2000;
+}
+
+.nav div.category li.category {
+    display: inline;
+    float: left;
+    font-size: medium;
+    margin: 0 0 0 3px;
+}
+ul {
+    padding-left: 89px;
+}
+
+.nav .category li.category > a {
+    border: 1px solid #e6e7e8;
+    border-bottom: none;
+    display: block;
+    font-size: .9em;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-decoration: none;
+    -webkit-border-radius: 4px 4px 0px 0px;
+    border-radius: 4px 4px 0 0;
+    
+}
+.logo {
+    display: block;
+    margin-top: 20px;
+}
+
+.background{
+    background-color: rgb(230, 231, 232);
+    z-index: -5;
+    height:auto;
+    min-height:755px;
+}
+
+/*Section 2*/
+.section-2 {
+    /*height: 345px;*/
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+    background: #fff;
 }
