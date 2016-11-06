@@ -54,48 +54,48 @@
 
     <div class="pure-g givemespace">
 
-      <div class="pure-u-23-24 dashboard__card">
-        <div  id="beginning" style="display: block">
+      <div id="beginning" class="pure-u-23-24 dashboard__card dashboard__card--nospace card-center">
+        <div   style="display: block">
           <h2 class="center fancy"> <span>For a more personalized experience what brings you by?</span></h2>
           <div class="pure-g flex">
-            <div class="pure-u-1-4">
-              <h2 class="flex"><a href="#personal-questions" onClick="$('#personal-step').toggle(); $('#beginning').toggle();">Personal Banking</a></h2>
-            </div>
-            <div class="pure-u-1-4">
-              <h2 class="flex"><a href="">Business Banking</a></h2>
-            </div>
+
+              <a href="" class="flex pure-u-11-24 choice">Information for my business</a>
+
+
+              <a class="pure-u-11-24 choice left-margin"href="#personal-questions" onClick="$('#personal-step').toggle(); $('#beginning').toggle();">Information for myself, or my family.</a></h3>
+
+           
           </div>
         </div>
       </div>
-      <div class="pure-u-1-1">
-        <div class="pure-g" id="personal-step" style="display: none">
-          <div class="flex">
+      <div class=" pure-u-23-24 dashboard__card dashboard__card--nospace card-center" id="personal-step" style="display: none">
+          <div  style="display: block">
             <a name="personal-questions"></a>
-            <div class="pure-u-1-6">
-              <h2 class="flex"><a href="#account-questions" onClick="$('#account-step').toggle(); $('#personal-step').toggle();">Account</a></h2>
+            <h2 class="center fancy"> <span>--type here</span></h2>
+            <div class="pure-u-7-24 choice">
+              <h3 class="flex"><a href="#account-questions" onClick="$('#account-step').toggle(); $('#personal-step').toggle();">Account</a></h3>
             </div>
-            <div class="pure-u-1-6">
-              <h2 class="flex"><a href="#loan-questions" onClick="$('#loan-step').toggle(); $('#personal-step').toggle();">Loan</a></h2>
+            <div class="pure-u-7-24 choice">
+              <h3 class="flex"><a href="#loan-questions" onClick="$('#loan-step').toggle(); $('#personal-step').toggle();">Loan</a></h3>
             </div>
-            <div class="pure-u-1-6">
-              <h2 class="flex"><a href="#cc-questions" onClick="$('#cc-step').toggle(); $('#personal-step').toggle();">Credit Card</a></h2>
+            <div class="pure-u-7-24 choice">
+              <h3 class="flex"><a href="#cc-questions" onClick="$('#cc-step').toggle(); $('#personal-step').toggle();">Credit Card</a></h3>
               <a href="#beginning" onClick="$('#personal-step').toggle(); $('#beginning').toggle();">Back</a>
             </div>
           </div>
-        </div>
+
       </div>
-      <div class="pure-u-1-1">
-        <div class="pure-g" id="account-step" style="display: none">
+      <div id="account-step" style="display: none" class="pure-u-23-24 dashboard__card dashboard__card--nospace card-center" id="personal-step">
+        <div class="pure-g" >
           <div class="flex">
-            <a name="account-questions"></a>
-            <div class="pure-u-1-6">
-              <h2 class="flex"><a href="">Checking</a></h2>
+            <div class="pure-u-7-24 choice">
+              <h3 class="flex"><a href="">Checking</a></h3>
             </div>
-            <div class="pure-u-1-6">
-              <h2 class="flex"><a href="#savings-questions" onClick="$('#savings-step').toggle(); $('#account-step').toggle();">Savings</a></h2>
-            </div>
-            <div class="pure-u-1-6">
-              <h2 class="flex"><a href="">Investment</a></h2>
+            <a href="#savings-questions" class="pure-u-7-24 choice" onClick="$('#savings-step').toggle(); $('#account-step').toggle();">
+              Savings
+            </a>
+            <div class="pure-u-7-24 choice">
+              <h3 class="flex"><a href="">Investment</a></h3>
               <a href="#personal-step" onClick="$('#account-step').toggle(); $('#personal-step').toggle();">Back</a>
             </div>
           </div>
@@ -105,13 +105,13 @@
         <div class="pure-g" id="loan-step" style="display: none">
           <div class="flex">
             <a name="loan-questions"></a>
-            <div class="pure-u-1-6">
+            <div class="pure-u-7-24 choice">
               <h2 class="flex"><a href="">Home</a></h2>
             </div>
-            <div class="pure-u-1-6">
+            <div class="pure-u-7-24 choice">
               <h2 class="flex"><a href="https://www.firstnational.com/site/personal/lending/auto-loans.fhtml">Auto</a></h2>
             </div>
-            <div class="pure-u-1-6">
+            <div class="pure-u-7-24 choice">
               <h2 class="flex"><a href="">Personal</a></h2>
               <a href="#personal-step" onClick="$('#loan-step').toggle(); $('#personal-step').toggle();">Back</a>
             </div>
@@ -120,13 +120,13 @@
       </div>
       <div class="pure-u-1-1" id="cc-step" style="display: none">
         <a name="cc-questions"></a>
-        <h1 class="center">What's more important to you?</h1>
+        <h1 class="center">What are you more interested in?</h1>
         <div class="pure-g">
           <div class="flex">
-            <div class="pure-u-1-4">
+            <div class="pure-u-11-24 choice">
               <h2 class="flex"><a href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Cash Back</a></h2>
             </div>
-            <div class="pure-u-1-4">
+            <div class="pure-u-11-24 choice">
               <h2 class="flex"><a href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Low Interest</a></h2>
               <a href="#personal-step" onClick="$('#cc-step').toggle(); $('#personal-step').toggle();">Back</a>
             </div>

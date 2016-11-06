@@ -144,7 +144,6 @@ h1 span{
 }
 img.login-box {
     z-index: 100;
-    float: right;
 }
 img.slider-img{
     position: absolute;
@@ -157,4 +156,30 @@ img.slider-img{
 }
 .pure-g.givemespace{
     margin-top: 130px;
+}
+.card-center{
+    margin: 14px auto;!important;
+}
+h3 a{
+    text-decoration: none;
+}
+.choice{
+    border:1px solid #CCCCCC;
+    margin-bottom: 10px;
+    height: 100px;
+    margin-right: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+.choice:hover{
+    background: #efefef;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important ;
+
+
+}
+.left-margin{
+    margin-left:10px;
 }

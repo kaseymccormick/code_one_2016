@@ -164,6 +164,9 @@ Dashboard
     overflow: hidden;
     
 }
+.dashboard__card--nospace{
+    margin: 7px auto;
+}
 .card__header{
 padding:15px 0px 0px 10px;
 }
@@ -265,11 +268,14 @@ Overwite pure
 * {
     box-sizing: border-box;
 
-
+}
     .slider-img, .login-box{
         display: inline-block;
     }
 
 .pure-g.givemespace {
     margin-top: 130px;
+}
+a, a:visited{
+    color: #006633;
 }
