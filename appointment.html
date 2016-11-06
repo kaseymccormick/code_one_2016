@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FNB | Schedule Appointment</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="assets/styles/appointment.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+      showOn: "button",
+      buttonText: "<i class='fa fa-calendar'></i>",
+      minDate: 1,
+      maxDate: 20,
+      beforeShowDay: $.datepicker.noWeekends
+    });
+  } );
+</script>
+</head>
+<body>
+ 
+
+<form action="personal/creditCards.html">
+  <p>Date: <input type="text" id="datepicker"></p>
+  <button>Submit</button>
+</form>
+</body>
+ 
+</body>
+</html>
