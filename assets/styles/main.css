@@ -90,6 +90,8 @@ note{
 
 .small{
   font-size: small;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 /*------------------------------
  Table styles
@@ -297,4 +299,8 @@ Overwite pure
   
   #section1 .cross-sell .ad {
     margin-left: 0px;
+  }
+  
+  .weatherh5{
+    font-size: small;
   }
