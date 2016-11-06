@@ -6,7 +6,7 @@ With our tech stack, no setup is needed simply visit [website link here](the web
 ## Project Description
 
 ### The challenge:
->>Our challenge for yo is to invent an experience that would make you want to be a First National Bank customer.
+>Our challenge for you is to invent an experience that would make you want to be a First National Bank customer.
 
 ### Judging Criteria:
 - **Customer Benefit** – How does your idea make the customers experience awesome?
@@ -17,7 +17,7 @@ With our tech stack, no setup is needed simply visit [website link here](the web
 ### Method
 
 **Tech Stack** *and Libraries*
-- HTMl
+- HTML
 - CSS
 - Javascript
 - Pure CSS [normalization, grid]
@@ -33,11 +33,11 @@ With our tech stack, no setup is needed simply visit [website link here](the web
 ### Accomplishments that We're Proud of
 
 **Cameron**
->>
+> tbd
 **Kasey**
->>
+> tbd
 **Wendy**
->>
+> tbd
 
 ### What we Learned
 
