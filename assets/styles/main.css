@@ -83,9 +83,27 @@ note{
     font-size: 10px;
     font-style: italic;
 }
-/*
+.currency-in-table{
+    text-align: right;
+    padding-right: 15px;
+}
+/*------------------------------
+ Table styles
+------------------------------*/
+.table-header{
+    background: #ccc;
+}
+.table-header td{
+font-weight: bold;
+}
+/*td{*/
+    /*min-width: 100px;*/
+/*}*/
+
+/*------------------------------
 Bisected header line
-*/
+------------------------------*/
+
 
 .fancy {
     line-height: 0.5;
