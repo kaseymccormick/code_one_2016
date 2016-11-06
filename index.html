@@ -115,8 +115,8 @@
     <div id="cc-step" class="pure-u-23-24 dashboard__card dashboard__card--nospace card-center" style="display: none">
       <h2 class="center fancy">What benefit are you more interested in?</h2>
       <div class="pure-g flex">
-            <a class="pure-u-11-24 choice"href="#cc-choices" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Cash Back</a>
-            <a class="pure-u-11-24 choice left-margin" href="#cc-choices" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Low Interest</a>
+            <a class="pure-u-11-24 choice"href="#cc-choices" onClick="$('#cc-table').toggle(); $('#cc-step').toggle(); $( '#cb1, #cb2, #cb3, #cb4, #cb5, #cb6, #cb7, #cb8' ).addClass( 'win-cash-back' );">Cash Back</a>
+            <a class="pure-u-11-24 choice left-margin" href="#cc-choices" onClick="$('#cc-table').toggle(); $('#cc-step').toggle(); $( '#apr1, #apr2,#apr3,#apr4,#apr5,#apr6,#apr7,#apr8').addClass( 'win-apr' );">Low Interest</a>
             <a class="pure-u-3-24 back-button" href="#personal-step" onClick="$('#cc-step').toggle(); $('#personal-step').toggle();">Back</a>
       </div>
     </div>
@@ -156,7 +156,7 @@
     </div>
     <div id="cc-table" class="pure-u-23-24 dashboard__card dashboard__card--nospace card-center"  style="display: none">
       <div class="padding-20">
-      <a id="cc-choices" href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Back</a>
+      <a id="cc-choices" href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();  $( '#cb1, #cb2, #cb3, #cb4, #cb5, #cb6, #cb7, #cb8' ).removeClass( 'win-cash-back' ); $( '#apr1, #apr2,#apr3,#apr4,#apr5,#apr6,#apr7,#apr8').removeClass( 'win-apr' );">Back</a>
       <h2 class="center fancy"><span>We have the following savings accounts.</span></h2>
 
       <table class="padding-20">
@@ -171,69 +171,69 @@
         </tr>
         <tr>
           <td><strong></strong></td>
-          <td class="win-cash-back"><strong>CashBack Visa Card</strong></td>
+          <td  id="cb1"><strong>CashBack Visa Card</strong></td>
           <td><strong>First National Bank American Express Card</strong></td>
           <td><strong>Complete REwards Visa Card</strong></td>
-          <td class="win-apr"><strong>Platinum Edition Visa Card</strong></td>
+          <td  id="apr1"><strong>Platinum Edition Visa Card</strong></td>
           <td><strong>Secured Visa Card</strong></td>
         </tr>
         <tr>
           <td>No Annual Fees</td>
-          <td class="fn-light-green-text win-cash-back">&#10004;</td>
+          <td class="fn-light-green-text"  id="cb2">&#10004;</td>
           <td class="fn-light-green-text">&#10004;</td>
           <td class="fn-light-green-text">&#10004;</td>
-          <td class="fn-light-green-text win-apr">&#x2714;</td>
+          <td class="fn-light-green-text " id="apr2">&#x2714;</td>
           <td class="fn-light-green-text">&#x2714;</td>
         </tr>
         <tr class="light-gray-background">
           <td >Free Fico Credit Score</td>
-          <td class="fn-light-green-text win-cash-back">&#10004;</td>
+          <td class="fn-light-green-text " id="cb3">&#10004;</td>
           <td class="fn-light-green-text">&#10004;</td>
           <td class="fn-light-green-text">&#10004;</td>
-          <td class="fn-light-green-text win-apr">&#x2714;</td>
+          <td class="fn-light-green-text" id="apr3">&#x2714;</td>
           <td class="fn-light-green-text">&#x2714;</td>
         </tr>
         <tr >
           <td>Cash Back</td>
-          <td class="win-cash-back">2%</td>
+          <td  id="cb4">2%</td>
           <td>1.5%</td>
           <td>1%</td>
-          <td class="win-apr"></td>
+          <td  id="apr4"></td>
           <td></td>
         </tr>
         <tr class="light-gray-background">
           <td>Rewards</td>
-          <td class="win-cash-back"> 2 points per $1 spent <br/>
+          <td id="cb5"> 2 points per $1 spent <br/>
                $25 cash back for every 2500 points <br/>
           </td>
           <td> $100 automatic statement credit<sup>1</sup> </td>
           <td> Ability to Double your Rewards <sup>2</sup></td>
-          <td class="win-apr"> $25 statement credit <sup>3</sup></td>
+          <td id="apr5"> $25 statement credit <sup>3</sup></td>
           <td> Request your own credit limit <sup>4</sup></td>
         </tr>
         <tr>
           <td>Rewards Never Expire?</td>
-          <td class="fn-light-green-text win-cash-back">&#10004;</td>
+          <td class="fn-light-green-text " id="cb6">&#10004;</td>
           <td class="fn-light-green-text">&#10004;</td>
           <td class="fn-light-green-text">&#10004;</td>
-          <td class="win-apr"></td>
+          <td id="apr6"></td>
           <td></td>
         </tr>
 
         <tr class="light-gray-background">
           <td>APR</td>
-          <td class="win-cash-back">17.99%</td>
+          <td id="cb7">17.99%</td>
           <td>19.24%</td>
           <td>0% for 15 billing cycles, then variable from 16.24% - 23.24%</td>
-          <td class="win-apr">0% for 15 billing cycles, then variable from 10.24% - 18.24%</td>
+          <td id="apr7">0% for 15 billing cycles, then variable from 10.24% - 18.24%</td>
           <td>Variable 18.24%</td>
         </tr>
         <tr>
           <td></td>
-          <td class="win-cash-back"><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-cashback.fhtml">Learn More</a></td>
+          <td id="cb8"><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-cashback.fhtml">Learn More</a></td>
           <td><a href="https://www.firstnational.com/site/personal/credit-card/amex/amex-standard.fhtml">Learn More</a></td>
           <td><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-completerewards.fhtml">Learn More</a></td>
-          <td class="win-apr"><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-completerewards.fhtml">Learn More</a></td>
+          <td id="apr8"><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-completerewards.fhtml">Learn More</a></td>
           <td><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-secured.fhtml">Learn More</a></td>
         </tr>
       </table>
