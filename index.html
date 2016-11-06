@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/base-min.css">
 
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel='shortcut icon' href='fav-icon.ico' type='image/x-icon'/ >
 
 </head>
 <body>
@@ -22,8 +23,8 @@
     </div>
     <div class="pure-u-2-3 category">
       <ul>
-        <li class="category"><a href="">ATM Locator</a></li>
-        <li class="category"><a href="">Branch Locator</a></li>
+        <li class="category"><a href="">ATM and Branch Locator</a></li>
+        <!-- <li class="category"><a href="">Branch Locator</a></li> -->
         <li class="category"><a href="">Book an Appointment</a></li>
         <li class="category"><a href="https://www.firstnational.com/site/about-us/">About</a></li>
       </ul>
@@ -33,7 +34,7 @@
 <div class="background">
   <div class="section-2">
     <div  class="slider" style="position: relative; left: 0; top: 0;">
-      <img class="login-box" src="assets/images/loginshot.png" style="position: relative; top: 0; left: 0;"/>
+      <a href="Dashboard.html"><img class="login-box" src="assets/images/loginshot.png" style="position: relative; top: 0; left: 0;"/></a>
       <img class="slider-img box-shadow" src="assets/images/slider.png" >
     </div>
     <div class="core-values display-none">
@@ -113,7 +114,7 @@
       </div>
 
     <div id="cc-step" class="pure-u-23-24 dashboard__card dashboard__card--nospace card-center" style="display: none">
-      <h2 class="center fancy">What benefit are you more interested in?</h2>
+      <h2 class="center main"><span>What benefit are you more interested in?</span></h2>
       <div class="pure-g flex">
             <a class="pure-u-11-24 choice"href="#cc-choices" onClick="$('#cc-table').toggle(); $('#cc-step').toggle(); $( '#cb1, #cb2, #cb3, #cb4, #cb5, #cb6, #cb7, #cb8' ).addClass( 'win-cash-back' );">Cash Back</a>
             <a class="pure-u-11-24 choice left-margin" href="#cc-choices" onClick="$('#cc-table').toggle(); $('#cc-step').toggle(); $( '#apr1, #apr2,#apr3,#apr4,#apr5,#apr6,#apr7,#apr8').addClass( 'win-apr' );">Low Interest</a>

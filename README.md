@@ -29,6 +29,5 @@ interested in [credit card] [loan] [lines of credit]
 
 [Specialized Services]
 questions to further help
-#image attribution
-FN tower-> https://i.ytimg.com/vi/qVtm3J-Xl5A/maxresdefault.jpg
-Piggy bank icon ->
+
+#Image Attribution
