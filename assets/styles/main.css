@@ -173,7 +173,7 @@ padding:15px 0px 0px 10px;
     padding: 20px;
     border: solid 1px #CCCCCC;
     line-height: 20px;
-    background: #B3B3B3;
+    background: #dfdfdf;
 }
 /*------------------------------
 Dashboard dragability
@@ -270,4 +270,27 @@ Overwite pure
     align-items: center;
     height: 230px;
   }
+  
+  .argh{
+
+    padding-top: 21px;
+    padding-bottom: 22px;
+    overflow: hidden;
+        width: 79%;
+  }
     
+  .widget-list{
+    display: flex;
+    flex-direction: column;
+    width: 167%;
+    margin-left: 18px;
+  }
+  
+  #my-ad{
+    width: 97%;
+        margin-left: 18px;
+  }
+  
+  #section1 .cross-sell .ad {
+    margin-left: 0px;
+  }
