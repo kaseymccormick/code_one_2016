@@ -87,6 +87,10 @@ note{
     text-align: right;
     padding-right: 15px;
 }
+
+.small{
+  font-size: small;
+}
 /*------------------------------
  Table styles
 ------------------------------*/
@@ -282,12 +286,12 @@ Overwite pure
   .widget-list{
     display: flex;
     flex-direction: column;
-    width: 167%;
-    margin-left: 18px;
+    width: 126%;
+        margin-left: 27px;
   }
   
   #my-ad{
-    width: 97%;
+    width: 91%;
         margin-left: 18px;
   }
   
