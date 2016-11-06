@@ -15,7 +15,13 @@ With our tech stack, no setup is needed simply visit [website link here](the web
 - **Innovative (new or uniquely better)** - Are you doing something that differentiates us from the rest of the Financial Industry?
 
 ### Method
+We first looked at the financial companys we deal with from credit cards to our own banking. And looked at their websites and apps for context and gathering what works well, and what doesn't. From there we discussed digital experiences we enjoy. One we all agreed on was setting up our Iphones, a question at a time. And other tools that ndecide information the same way.
 
+
+### Solution
+After looking at several other banks sites and discussing our own plesant digital expereince we found that a walk through solution would be best for new customers. And a configurable dashboard for existing customers.
+
+### How it's built
 **Tech Stack** *and Libraries*
 - HTML
 - CSS
@@ -23,19 +29,16 @@ With our tech stack, no setup is needed simply visit [website link here](the web
 - Pure CSS [normalization, grid]
 - Fontawesome [icon font]
 - []
-
-### Solution
-
-### How it's built
-
 ### Challenges
 
 ### Accomplishments that We're Proud of
 
 **Cameron**
 > tbd
+
 **Kasey**
 > tbd
+
 **Wendy**
 > tbd
 
