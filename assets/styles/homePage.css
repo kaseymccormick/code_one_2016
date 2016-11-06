@@ -83,6 +83,9 @@ li {
   #bg{
     width: 960px;
     height: 465px;
+      position: absolute;
+      top: 0px;
+
   }
   
 /*info Section*/
@@ -103,5 +106,11 @@ li {
         /* width: 75%; */
         background: blanchedalmond;
   }
-  
- 
+
+li.category > a:hover {
+    color: #d28e00;
+}
+.login-box{
+    z-index: 500;
+
+}

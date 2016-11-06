@@ -7,153 +7,226 @@
 
   <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/base-min.css&pure/0.6.0/grids-min.css&pure/0.6.0/grids-responsive-min.css">
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/base-min.css">
- <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" href="Account%20Detail_files/wrapper-homepage-sitebrand.css"/>
+  <link rel="stylesheet" href="Account%20Detail_files/forms.css"/>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 </head>
 <body>
 <header>
   <div class="pure-g">
     <div class="section-1">
       <div class="nav">
-    <div class="pure-u-1-3">
-        <img class="logo" src="assets/images/FN_logo.png" alt=""/>
-    </div>
-    <div class="pure-u-2-3 category">
-      <ul>
-        <li class="category"><a href="">ATM Locator</a></li>
-        <li class="category"><a href="">Branch Locator</a></li>
-        <li class="category"><a href="">Book an Appointment</a></li>
-        <li class="category"><a href="https://www.firstnational.com/site/about-us/">About</a></li>
-      </ul>
-    </div>
-  </div>
-  </div>
-    <div class="pure-u-1-1 background">
-      <div class="section-2">
-      <img src="assets/images/omaha_1-1.jpg" id="bg" alt=""/>        
-      <div class="pure-g">
-        <div class="pure-u-1-1">
-          <h1>First National Bank Core Values</h1>
-          <p>Integrity in every interaction</p>
-          <p>Respect for our employees, customers and shareholders</p>
-          <p>Passion for all that we do</p>
+        <div class="pure-u-1-3">
+          <img class="logo" src="assets/images/FN_logo.png" alt=""/>
+        </div>
+        <div class="pure-u-2-3 category">
+          <ul>
+            <li class="category"><a href="">ATM Locator</a></li>
+            <li class="category"><a href="">Branch Locator</a></li>
+            <li class="category"><a href="">Book an Appointment</a></li>
+            <li class="category"><a href="https://www.firstnational.com/site/about-us/">About</a></li>
+          </ul>
         </div>
       </div>
     </div>
+    <div class="pure-u-1-1 background">
+      <div class="section-2">
+<div class="pure-g login-box">
+  <div class="pure-u-1-1">
+    <label for="userid">UserId</label> <br/>
+    <input type="text" name="userid"/>
+  </div>
+</div>
+        <img src="assets/images/omaha_1-1.jpg" id="bg" alt=""/>
+      </div>
     </div>
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1>First National Bank Core Values</h1>
+        <p>Integrity in every interaction</p>
+        <p>Respect for our employees, customers and shareholders</p>
+        <p>Passion for all that we do</p>
+      </div>
+    </div>
+  </div>
   </div>
 </header>
 <div class="pure-g">
   <div class="pure-u-1-1">
     <div class="info-section">
-    <h1>First National Bank</h1>
-    <p>First National Bank has a history of doing what's right for our customers and the communities we serve. Founded in 1857, in the spirit of innovation and commitment to
-       customer service, this sixth generation family-owned business has become the largest privately-owned bank holding company in the United States.</p>
-  </div>
-  </div>
-<div class="pure-u-1-1">
-  <div  id="beginning" style="display: block">
-  <h2 class="center">Would brings you here?</h2>
-  <div class="pure-g flex">
-    <div class="pure-u-1-4">
-      <h2 class="flex"><a href="#personal-questions" onClick="$('#personal-step').toggle(); $('#beginning').toggle();">Personal Banking</a></h2>
-    </div>
-    <div class="pure-u-1-4">
-      <h2 class="flex"><a href="">Business Banking</a></h2>
+      <h1>First National Bank</h1>
+      <p>First National Bank has a history of doing what's right for our customers and the communities we serve. Founded in 1857, in the spirit of innovation and commitment to
+        customer service, this sixth generation family-owned business has become the largest privately-owned bank holding company in the United States.</p>
     </div>
   </div>
-</div>
-</div>
-<div class="pure-u-1-1">
-  <div class="pure-g" id="personal-step" style="display: none">
-     <div class="flex">
-    <a name="personal-questions"></a> 
-    <div class="pure-u-1-6">
-      <h2 class="flex"><a href="#account-questions" onClick="$('#account-step').toggle(); $('#personal-step').toggle();">Account</a></h2>
-    </div>
-    <div class="pure-u-1-6">
-      <h2 class="flex"><a href="#loan-questions" onClick="$('#loan-step').toggle(); $('#personal-step').toggle();">Loan</a></h2>
-    </div>
-    <div class="pure-u-1-6">
-      <h2 class="flex"><a href="#cc-questions" onClick="$('#cc-step').toggle(); $('#personal-step').toggle();">Credit Card</a></h2>
-       <a href="#beginning" onClick="$('#personal-step').toggle(); $('#beginning').toggle();">Back</a>
+  <div class="pure-u-1-1">
+    <div  id="beginning" style="display: block">
+      <h2 class="center">Would brings you here?</h2>
+      <div class="pure-g flex">
+        <div class="pure-u-1-4">
+          <h2 class="flex"><a href="#personal-questions" onClick="$('#personal-step').toggle(); $('#beginning').toggle();">Personal Banking</a></h2>
+        </div>
+        <div class="pure-u-1-4">
+          <h2 class="flex"><a href="">Business Banking</a></h2>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
-<div class="pure-u-1-1">
- <div class="pure-g" id="account-step" style="display: none">
-   <div class="flex">
-   <a name="account-questions"></a> 
-   <div class="pure-u-1-6">
-     <h2 class="flex"><a href="">Checking</a></h2>
-   </div>
-   <div class="pure-u-1-6">
-      <h2 class="flex"><a href="#savings-questions" onClick="$('#savings-step').toggle(); $('#account-step').toggle();">Savings</a></h2>
-   </div>
-   <div class="pure-u-1-6">
-     <h2 class="flex"><a href="">Investment</a></h2>
-     <a href="#personal-step" onClick="$('#account-step').toggle(); $('#personal-step').toggle();">Back</a>
-   </div>
- </div>
-</div>
-</div>
-<div class="pure-u-1-1">
- <div class="pure-g" id="loan-step" style="display: none">
-   <div class="flex">
-   <a name="loan-questions"></a> 
-   <div class="pure-u-1-6">
-    <h2 class="flex"><a href="">Home</a></h2>
-   </div>
-   <div class="pure-u-1-6">
-      <h2 class="flex"><a href="https://www.firstnational.com/site/personal/lending/auto-loans.fhtml">Auto</a></h2>
-   </div>
-   <div class="pure-u-1-6">
-     <h2 class="flex"><a href="">Personal</a></h2>
-     <a href="#personal-step" onClick="$('#loan-step').toggle(); $('#personal-step').toggle();">Back</a>
-   </div>
- </div>
- </div>
-</div>
-<div class="pure-u-1-1" id="cc-step" style="display: none">
-  <a name="cc-questions"></a> 
-  <h1 class="center">What's more important to you?</h1>
- <div class="pure-g">
-   <div class="flex">
-   <div class="pure-u-1-4">
-    <h2 class="flex"><a href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Cash Back</a></h2>
-   </div>
-   <div class="pure-u-1-4">
-    <h2 class="flex"><a href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Low Interest</a></h2>
-    <a href="#personal-step" onClick="$('#cc-step').toggle(); $('#personal-step').toggle();">Back</a>
-   </div>
- </div>
+  <div class="pure-u-1-1">
+    <div class="pure-g" id="personal-step" style="display: none">
+      <div class="flex">
+        <a name="personal-questions"></a>
+        <div class="pure-u-1-6">
+          <h2 class="flex"><a href="#account-questions" onClick="$('#account-step').toggle(); $('#personal-step').toggle();">Account</a></h2>
+        </div>
+        <div class="pure-u-1-6">
+          <h2 class="flex"><a href="#loan-questions" onClick="$('#loan-step').toggle(); $('#personal-step').toggle();">Loan</a></h2>
+        </div>
+        <div class="pure-u-1-6">
+          <h2 class="flex"><a href="#cc-questions" onClick="$('#cc-step').toggle(); $('#personal-step').toggle();">Credit Card</a></h2>
+          <a href="#beginning" onClick="$('#personal-step').toggle(); $('#beginning').toggle();">Back</a>
+        </div>
+      </div>
+    </div>
   </div>
-</div>    
-<div class="pure-u-1-1" id="savings-step" style="display: none">
-  <a name="savings-questions"></a> 
-  <a href="#account-step" onClick="$('#savings-step').toggle(); $('#account-step').toggle();">Back</a>
-  <h1 class="center">What Kind of Savings account are you interested in?</h1>
-  <div class="pure-g">
-    <div class="pure-u-1-4">
-      <h3>General Savings</h3>
-      <p>Competitve interest rates with no minimum balance.</p>
-      <p><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/savings-accounts.fhtml">Learn more</a></p>
+  <div class="pure-u-1-1">
+    <div class="pure-g" id="account-step" style="display: none">
+      <div class="flex">
+        <a name="account-questions"></a>
+        <div class="pure-u-1-6">
+          <h2 class="flex"><a href="">Checking</a></h2>
+        </div>
+        <div class="pure-u-1-6">
+          <h2 class="flex"><a href="#savings-questions" onClick="$('#savings-step').toggle(); $('#account-step').toggle();">Savings</a></h2>
+        </div>
+        <div class="pure-u-1-6">
+          <h2 class="flex"><a href="">Investment</a></h2>
+          <a href="#personal-step" onClick="$('#account-step').toggle(); $('#personal-step').toggle();">Back</a>
+        </div>
+      </div>
     </div>
-    <div class="pure-u-1-4">
-      <h3>Money Market</h3>
-      <p>Accessibility and growth</p>
-      <p><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/money-market.fhtml">Learn more</a></p>
+  </div>
+  <div class="pure-u-1-1">
+    <div class="pure-g" id="loan-step" style="display: none">
+      <div class="flex">
+        <a name="loan-questions"></a>
+        <div class="pure-u-1-6">
+          <h2 class="flex"><a href="">Home</a></h2>
+        </div>
+        <div class="pure-u-1-6">
+          <h2 class="flex"><a href="https://www.firstnational.com/site/personal/lending/auto-loans.fhtml">Auto</a></h2>
+        </div>
+        <div class="pure-u-1-6">
+          <h2 class="flex"><a href="">Personal</a></h2>
+          <a href="#personal-step" onClick="$('#loan-step').toggle(); $('#personal-step').toggle();">Back</a>
+        </div>
+      </div>
     </div>
-    <div class="pure-u-1-4">
-      <h3>Minor Savings</h3>
-      <p>Teach your children to save</p>
-      <p><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/minor-savings-accounts.fhtml">Learn more</a></p>
+  </div>
+  <div class="pure-u-1-1" id="cc-step" style="display: none">
+    <a name="cc-questions"></a>
+    <h1 class="center">What's more important to you?</h1>
+    <div class="pure-g">
+      <div class="flex">
+        <div class="pure-u-1-4">
+          <h2 class="flex"><a href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Cash Back</a></h2>
+        </div>
+        <div class="pure-u-1-4">
+          <h2 class="flex"><a href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Low Interest</a></h2>
+          <a href="#personal-step" onClick="$('#cc-step').toggle(); $('#personal-step').toggle();">Back</a>
+        </div>
+      </div>
     </div>
-    <div class="pure-u-1-4">
-      <h3>Health Savings Account</h3>
-      <p>Save and pay for qualified medical expenses</p>
-      <p><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/health-savings-account.fhtml">Learn more</a></p>
+  </div>
+  <div class="pure-u-1-1" id="savings-step" style="display: none">
+    <a name="savings-questions"></a>
+    <a href="#account-step" onClick="$('#savings-step').toggle(); $('#account-step').toggle();">Back</a>
+    <h1 class="center">What Kind of Savings account are you interested in?</h1>
+    <div class="pure-g">
+      <div class="pure-u-1-4">
+        <h3>General Savings</h3>
+        <p>Competitve interest rates with no minimum balance.</p>
+        <p><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/savings-accounts.fhtml">Learn more</a></p>
+      </div>
+      <div class="pure-u-1-4">
+        <h3>Money Market</h3>
+        <p>Accessibility and growth</p>
+        <p><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/money-market.fhtml">Learn more</a></p>
+      </div>
+      <div class="pure-u-1-4">
+        <h3>Minor Savings</h3>
+        <p>Teach your children to save</p>
+        <p><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/minor-savings-accounts.fhtml">Learn more</a></p>
+      </div>
+      <div class="pure-u-1-4">
+        <h3>Health Savings Account</h3>
+        <p>Save and pay for qualified medical expenses</p>
+        <p><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/health-savings-account.fhtml">Learn more</a></p>
+      </div>
     </div>
+  </div>
+  <div class="pure-u-1-1" id="cc-table" style="display: none">
+    <a name="cc-step"></a>
+    <a href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Back</a>
+    <table>
+      <tr>
+        <td><strong></strong></td>
+        <td><strong>CashBack Visa Card</strong></td>
+        <td><strong>First National Bank American Express Card</strong></td>
+        <td><strong>Complete REwards Visa Card</strong></td>
+        <td><strong>Platinum Edition Visa Card</strong></td>
+        <td><strong>Secured Visa Card</strong></td>
+      </tr>
+      <tr>
+        <td><strong>No Annual Fees</strong></td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+      </tr>
+      <tr>
+        <td><strong>Cash Back</strong></td>
+        <td>2%</td>
+        <td>1.5%</td>
+        <td>1%</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>Rewards</strong></td>
+        <td>-</td>
+        <td>Receive a statement credit automatically every time you earn $25 in cash back. A one-time $100 automatic statement credit when you spend $500 in the first 3 billing cycles.</td>
+        <td>DOUBLE YOUR REWARDS: Choose to redeem your rewards into your checking, savings, mortgage or NEST 529 account for a higher value of 2% back.</td>
+        <td>$25 statement credit when you make a purchase within the first 3 billing cycles.</td>
+        <td>Request your own credit limit, establish or improve your credit, qualify for a credit limit increase.</td>
+      </tr>
+      <tr>
+        <td><strong>Rewards Never Expire?</strong></td>
+        <td>X</td>
+        <td>X</td>
+        <td>X</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>APR</strong></td>
+        <td>17.99%</td>
+        <td>19.24%</td>
+        <td>0% for 15 billing cycles, then variable from 16.24% - 23.24%</td>
+        <td>0% for 15 billing cycles, then variable from 10.24% - 18.24%</td>
+        <td>Variable 18.24%</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-cashback.fhtml">Learn More</a></td>
+        <td><a href="https://www.firstnational.com/site/personal/credit-card/amex/amex-standard.fhtml">Learn More</a></td>
+        <td><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-completerewards.fhtml">Learn More</a></td>
+        <td><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-completerewards.fhtml">Learn More</a></td><td>
+        <td><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-secured.fhtml">Learn More</a></td>
+      </tr>
+    </table>
   </div>
 </div>
 <div class="pure-u-1-1" id="cc-table" style="display: none">
