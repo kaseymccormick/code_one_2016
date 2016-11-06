@@ -20,9 +20,9 @@
     <script>
       function initMap() {
       	
-      	var branches = locations().marker;
-      //	var deposits = deposits().marker;
-      //	var atms = atms().marker;
+     	var branches = fnblocations().marker;
+      	var deposits = fnbdeposits().marker;
+      	var atms = fnbATMS().marker;
 
       	var uluru = {"lat": 41.2587199, "lng": -95.9566695}
 
@@ -343,6 +343,12 @@
           var div = document.createElement('div');
           div.innerHTML = '<img src="' + img + '"> ' + name;
           legend.appendChild(div);
+
+          div.addEventListener('onclick', filterType);
+        }
+
+        function filterType() {
+        	
         }
 
         map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);

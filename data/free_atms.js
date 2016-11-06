@@ -1,5 +1,7 @@
-function atms() {
-    return {"marker": [
+function fnbATMS() {
+
+    return {
+      "marker": [
       {
         "-lat": "41.20887",
         "-lng": "-96.08144",

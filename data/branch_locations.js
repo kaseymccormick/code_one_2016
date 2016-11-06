@@ -1,4 +1,4 @@
-function locations() {
+function fnblocations() {
   
   return {
     "marker": [

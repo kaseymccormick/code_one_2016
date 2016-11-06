@@ -1,4 +1,4 @@
-function deposits() {
+function fnbdeposits() {
   return {
     "marker": [
       {
