@@ -5,9 +5,12 @@
   <title>FNB | Schedule Appointment</title>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="assets/styles/appointment.css">
+  <link rel="stylesheet" href="assets/styles/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="assets/js/jquery-modal.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
   <script>
   $( function() {
     $( "#datepicker" ).datepicker({
@@ -23,8 +26,24 @@
 <body>
  
 
+<!-- Modal HTML embedded directly into document -->
+  <div id="ex1" style="display:none;">
+    <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
+  </div>
+
+  <!-- Link to open the modal -->
+  <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+
+<div class="appointment-header fn-background-green">
+  <i class="fa fa-address-book-o"></i>
+  <div>First National Bank</div>
+  <h3>Book an appointment</h3>
+  <i class="fa fa-share-atlt-square" onclick=""></i>
+</div>
+
+
 <form class="appointment-form" action="personal/creditCards.html">
-  <div class="input-line">Date: <input type="text" id="datepicker"></div>
+  <div class="input-line"><input type="text" id="datepicker" placeholder="Date"></div>
   <button>Submit</button>
 </form>
 </body>
