@@ -12,7 +12,7 @@
   $( function() {
     $( "#datepicker" ).datepicker({
       showOn: "button",
-      buttonText: "<i class='fa fa-calendar'></i>",
+      buttonText: "<i class='fa fa-calendar fa-2x'></i>",
       minDate: 1,
       maxDate: 20,
       beforeShowDay: $.datepicker.noWeekends
@@ -23,8 +23,8 @@
 <body>
  
 
-<form action="personal/creditCards.html">
-  <p>Date: <input type="text" id="datepicker"></p>
+<form class="appointment-form" action="personal/creditCards.html">
+  <div class="input-line">Date: <input type="text" id="datepicker"></div>
   <button>Submit</button>
 </form>
 </body>
