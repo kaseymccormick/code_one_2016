@@ -8,15 +8,57 @@
 
     <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.6.0/base-min.css&pure/0.6.0/grids-min.css&pure/0.6.0/grids-responsive-min.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/base-min.css">
-
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="data/branch_locations.js"></script>
     <script src="data/deposit_atms.js"></script>
     <script src="data/free_atms.js"></script>
 </head>
 <body>
-	<h3></h3>
+<div class="all-map">
+	<h3>First National Bank Locations</h3>
     <div id="map"></div>
     <div id="legend"><h3>Legend</h3></div>
+    <h3 style="text-align:center;">Your Locations</h3>
+    <div id="well"></div>
+    <script>
+	  function showMyLocations(){
+	      var appointments = JSON.parse(localStorage.getItem("fnb-locations")) || [];
+	      var well = document.getElementById('well');
+	      $(".fn-location").remove();
+	      for (i = 0; i < appointments.length; i ++) {
+	        var appt = JSON.parse(appointments[i]);
+	        $("#well").append('<div class="fn-location"><div style="display:inline-block;width:80%;"><h3>Hello!</h3></div></div>');
+
+	    }
+	  }
+
+	  $.fn.serializeObject = function()
+	    {
+	        var o = {};
+	        var a = this.serializeArray();
+	        $.each(a, function() {
+	            if (o[this.name] !== undefined) {
+	                if (!o[this.name].push) {
+	                    o[this.name] = [o[this.name]];
+	                }
+	                o[this.name].push(this.value || '');
+	            } else {
+	                o[this.name] = this.value || '';
+	            }
+	        });
+	        return o;
+	    };
+
+	  function addLocation(theForm){
+
+	    var appointments = JSON.parse(localStorage.getItem('fnb-locations')) || [];
+	    appointments.push(JSON.stringify($(theForm).serializeObject()));
+	    localStorage.setItem('fnb-locations', JSON.stringify(appointments));
+	    showMyLocations();
+	  }
+	  window.onload = showMyLocations;
+	</script>
     <script>
       function initMap() {
       	
@@ -358,6 +400,7 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHo9YOCSVQJtZ54zGnnjuEi93gsK6aw8U&callback=initMap">
     </script>
+   </div>
 </body>
 </html>
 

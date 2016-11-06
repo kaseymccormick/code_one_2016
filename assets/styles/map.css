@@ -1,6 +1,14 @@
+.all-appointments {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+}
+
 #map {
 	height: 500px;
 	width:80%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 #legend {
@@ -15,4 +23,16 @@
 }
 #legend img {
 	vertical-align: middle;
+}
+#well {
+    height: 200px;
+    padding: 20px;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,.05);
+}
+
+.fn-location {
+    height: 80px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    padding: 10px;
 }
