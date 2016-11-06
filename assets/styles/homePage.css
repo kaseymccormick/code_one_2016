@@ -225,3 +225,34 @@ a{
     border-right: solid 1px #4AAA42;
     border-left: solid 1px #4AAA42;
 }
+
+.main span:before, .main span:after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    border-top: 3px solid #4aaa42;
+    top: 4px;
+    width: 84%;
+}
+
+#beginning{
+      margin: auto;
+}
+#personal-step{
+      margin: auto;
+}
+#account-step{
+      margin: auto;
+}
+#loan-step{
+      margin: auto;
+}
+#cc-step{
+      margin: auto;
+}
+#savings-step{
+      margin: auto;
+}
+#cc-table{
+      margin: auto;
+}
