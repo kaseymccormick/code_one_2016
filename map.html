@@ -30,7 +30,7 @@
 	      $(".fn-location").remove();
 	      for (i = 0; i < locations.length; i ++) {
 	        var loc = JSON.parse(locations[i]);
-	        $("#well").append('<div class="fn-location"><div style="display:inline-block;width:80%;"><h3>' +loc.label + '</h3></div><div style="width:20%;float:right;">' + loc.type + '</div></div>');
+	        $("#well").append('<div class="fn-location"><div style="width:10%;float:left;">' + icons[loc.type].svg + '</div><div style="display:inline-block;width:90%;"><h3>' +loc.label + '</h3></div></div>');
 
 	    }
 	  }
@@ -191,7 +191,7 @@
           });
 
           var infowindow = new google.maps.InfoWindow({
-            content: '<span>' + loc.label + '</span><br><button class="add-location fn-green-background" data-lat="' + loc["-lat"] + '" data-lng="' + loc["-lng"] + '" data-type="' + thisIcon.name + '" data-label="' + loc.label + '" onclick="addLocation(this)">Add location?</button>'
+            content: '<span>' + loc.label + '</span><br><button class="add-location fn-green-background" data-lat="' + loc["-lat"] + '" data-lng="' + loc["-lng"] + '" data-type="' + thisIcon.class + '" data-label="' + loc.label + '" onclick="addLocation(this)">Add location?</button>'
           });
           
           makeInfoWindowEvent(map, infowindow, marker);
