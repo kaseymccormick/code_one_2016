@@ -42,9 +42,9 @@
 }
 
 .nav div.category {
-    bottom: 5px;
+    bottom: 0px;
     position: absolute;
-    right: -116px;
+    right: -115px;
     z-index: 2000;
 }
 
@@ -214,5 +214,14 @@ a{
     position: absolute;
     right: 0px;
     bottom: 30px;
-    border: 1px solid #CCCCCC;
+
+}
+.padding-20{
+    padding:20px;
+}
+.win-cash-back, .win-apr{
+    background-color: #4AAA42;
+    background-color:rgba(74, 170, 66, 0.2);
+    border-right: solid 1px #4AAA42;
+    border-left: solid 1px #4AAA42;
 }
