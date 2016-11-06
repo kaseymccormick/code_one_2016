@@ -69,7 +69,7 @@
       <div id="personal-step" class=" pure-u-23-24 dashboard__card dashboard__card--nospace card-center"  style="display: none">
         <div  style="display: block">
           <!--<a name="personal-questions"></a>-->
-          <h2 class="center fancy"> <span>--type here</span></h2>
+          <h2 class="center fancy"> <span>What ..</span></h2>
           <div class="pure-g flex">
 
             <a href="#account-questions" class="pure-u-7-24 choice"onClick="$('#account-step').toggle(); $('#personal-step').toggle();">Account</a>
@@ -85,7 +85,7 @@
 
       </div>
       <div id="account-step"  class="pure-u-23-24 dashboard__card dashboard__card--nospace card-center" style="display: none" >
-        <h2 class="center fancy"><span>question here</span></h2>
+        <h2 class="center fancy"><span>What type of account?</span></h2>
         <div class="pure-g flex">
 
           <a class="pure-u-7-24 choice" href="">Checking</a>
@@ -99,10 +99,8 @@
 
         </div>
       </div>
-    </div>
-
       <div id="loan-step" class="pure-u-23-24 dashboard__card dashboard__card--nospace card-center"  style="display: none">
-        <h2 class="center fancy"><span>Question Here</span></h2>
+        <h2 class="center fancy"><span>What type of loan?</span></h2>
         <div class="pure-g flex">
           <a class="pure-u-7-24 choice" href="">Home</a>
           <a class="pure-u-7-24 choice left-margin" href="https://www.firstnational.com/site/personal/lending/auto-loans.fhtml">Auto</a>
@@ -113,27 +111,23 @@
         </div>
       </div>
 
-    <div class="pure-u-1-1" id="cc-step" style="display: none">
-      <a name="cc-questions"></a>
-      <h1 class="center">What are you more interested in?</h1>
-      <div class="pure-g">
-        <div class="flex">
-          <div class="pure-u-11-24 choice">
-            <h2 class="flex"><a href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Cash Back</a></h2>
-          </div>
-          <div class="pure-u-11-24 choice">
-            <h2 class="flex"><a href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Low Interest</a></h2>
-            <a href="#personal-step" onClick="$('#cc-step').toggle(); $('#personal-step').toggle();">Back</a>
-          </div>
-        </div>
+    <div id="cc-step" class="pure-u-23-24 dashboard__card dashboard__card--nospace card-center" style="display: none">
+      <h2 class="center fancy">What benefit are you more interested in?</h2>
+      <div class="pure-g flex">
+            <a class="pure-u-11-24 choice"href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Cash Back</a>
+            <a class="pure-u-11-24 choice left-margin" href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Low Interest</a>
+            <a class="pure-u-3-24 back-button" href="#personal-step" onClick="$('#cc-step').toggle(); $('#personal-step').toggle();">Back</a>
       </div>
     </div>
-    <div class="pure-u-1-1" id="savings-step" style="display: none">
-      <a name="savings-questions"></a>
-      <a href="#account-step" onClick="$('#savings-step').toggle(); $('#account-step').toggle();">Back</a>
-      <h1 class="center">What Kind of Savings account are you interested in?</h1>
+
+    <div id="savings-step" class="pure-u-23-24 dashboard__card dashboard__card--nospace card-center" style="display: none">
+      <h2 class="center fancy">We have the following savings accounts.</h2>
+      <div class="pure-g flex">
+        <div class="pure-u-23-24">
+
+
       <div class="pure-g">
-        <div class="pure-u-1-4">
+        <div class="pure-u-1-4 ">
           <h3>General Savings</h3>
           <p>Competitve interest rates with no minimum balance.</p>
           <p><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/savings-accounts.fhtml">Learn more</a></p>
@@ -143,15 +137,19 @@
           <p>Accessibility and growth</p>
           <p><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/money-market.fhtml">Learn more</a></p>
         </div>
-        <div class="pure-u-1-4">
+        <div class="pure-u-1-4 ">
           <h3>Minor Savings</h3>
           <p>Teach your children to save</p>
           <p><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/minor-savings-accounts.fhtml">Learn more</a></p>
         </div>
-        <div class="pure-u-1-4">
+        <div class="pure-u-1-4 ">
           <h3>Health Savings Account</h3>
           <p>Save and pay for qualified medical expenses</p>
           <p><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/health-savings-account.fhtml">Learn more</a></p>
+        </div>
+      </div>
+          <a class="pure-u-3-24 back-button" href="#account-step" onClick="$('#savings-step').toggle(); $('#account-step').toggle();">Back</a>
+
         </div>
       </div>
     </div>

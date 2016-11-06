@@ -183,6 +183,24 @@ a{
     text-align: center;
     vertical-align: baseline;
 }
+.border-shadow {
+    border:1px solid #CCCCCC;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding-top: 20px;
+    margin-top: 10px;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    color: #8c8c8c;
+    text-align: center;
+    vertical-align: baseline;
+
+}
 .choice:hover{
     color: #d28e00;
     border:1px solid #4AAA42;
