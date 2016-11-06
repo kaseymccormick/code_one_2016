@@ -19,7 +19,7 @@ We first looked at the financial companys we deal with from credit cards to our 
 
 
 ### Solution
-After looking at several other banks sites and discussing our own plesant digital expereince we found that a walk through solution would be best for new customers. And a configurable dashboard for existing customers.
+After looking at several other banks sites and discussing our own pleasant digital expereinces we found that a walk through solution would be best for new customers, and a configurable dashboard for existing.
 
 ### How it's built
 **Tech Stack** *and Libraries*
