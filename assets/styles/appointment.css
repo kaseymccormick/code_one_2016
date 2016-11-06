@@ -74,15 +74,12 @@ table {
 }
 
 .appointment-form input {
-
     border: none;
     padding: 0px;
     margin: 0px;
     height: auto;
     width: 80%;
     outline: none;
-
-
     color: rgba(0,0,0,0.87);
     display: inline-block;
     font-size: 14px;
@@ -91,7 +88,6 @@ table {
     text-overflow: ellipsis;
 
 }
-
 
 
 .appointment-form select {
