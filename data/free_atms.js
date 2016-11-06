@@ -1,6 +1,5 @@
-{
-  "markers": {
-    "marker": [
+function atms() {
+    return {"marker": [
       {
         "-lat": "41.20887",
         "-lng": "-96.08144",

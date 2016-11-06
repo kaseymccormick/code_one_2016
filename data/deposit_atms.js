@@ -1,5 +1,5 @@
-{
-  "markers": {
+function deposits() {
+  return {
     "marker": [
       {
         "-lat": "41.22978",

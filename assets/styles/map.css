@@ -2,3 +2,17 @@
 	height: 500px;
 	width:80%;
 }
+
+#legend {
+	font-family: Arial, sans-serif;
+	background: #fff;
+	padding: 10px;
+	margin: 10px;
+
+}
+#legend h3 {
+	margin-top: 0;
+}
+#legend img {
+	vertical-align: middle;
+}
