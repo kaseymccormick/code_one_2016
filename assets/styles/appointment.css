@@ -11,18 +11,48 @@ table {
 }
 
 .ui-datepicker-trigger {
-	border: none;
+    width: 42px;
 	height: auto;
 	background-color: white;
 	vertical-align: center;
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: rgba(0,0,0,.54);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 20px;
 }
 
-.appointment-form-header {
+.appointment-header {
     height: 64px;
     color: #fff;
     line-height: 1.2;
     text-align: left;
+    box-shadow: 0 2px 0px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
+.icon {
+    float: left;
+    height: 32px;
+    padding: 24px 16px 16px 24px;
+    width: 32px;
+}
+.share-link-icon {
+    float: right;
+    height: 32px;
+    padding: 24px 16px 16px 24px;
+    width: 32px;
+    color: white;
+
+}
+
+.share-link-icon:hover, .icon:hover, .share-link-icon:active, .icon:active {
+    color: #d7c826;
+}
+
 .appointment-form-header-where {
     display: inline-block;
     vertical-align: middle;
@@ -31,6 +61,7 @@ table {
 
 .appointment-form {
     max-width: 840px;
+    padding: 10px;
     text-align: center;
     background-color: #f2f2f2;
     font-family: Roboto, HelveticaNeue, Arial, sans-serif;
@@ -58,5 +89,9 @@ table {
     height: 16px;
     padding: 14px 0px;
     text-overflow: ellipsis;
+
+}
+
+.appointment-form .aria {
 
 }

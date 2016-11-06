@@ -15,7 +15,7 @@
   $( function() {
     $( "#datepicker" ).datepicker({
       showOn: "button",
-      buttonText: "<i class='fa fa-calendar fa-2x'></i>",
+      buttonText: "<div class='aria'><i class='fa fa-calendar fa-2x'></i></div>",
       minDate: 1,
       maxDate: 20,
       beforeShowDay: $.datepicker.noWeekends
@@ -27,18 +27,19 @@
  
 
 <!-- Modal HTML embedded directly into document -->
-  <div id="ex1" style="display:none;">
+  <div id="share" style="display:none;">
     <p>Thanks for clicking.  That felt good.  <a href="#" rel="modal:close">Close</a> or press ESC</p>
   </div>
 
   <!-- Link to open the modal -->
   <p><a href="#ex1" rel="modal:open">Open Modal</a></p>
 
-<div class="appointment-header fn-background-green">
-  <i class="fa fa-address-book-o"></i>
-  <div>First National Bank</div>
+<div class="appointment-header fn-green-background">
+  <i class="fa fa-address-book-o icon fa-2x"></i>
+  <a href="#share" rel="modal:open" class="share-link-icon"><i class="fa fa-share-alt-square fa-2x" ></i></a>
+
+  <h3>First National Bank</h3>
   <h3>Book an appointment</h3>
-  <i class="fa fa-share-atlt-square" onclick=""></i>
 </div>
 
 
