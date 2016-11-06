@@ -196,7 +196,7 @@
           });
 
           var infowindow = new google.maps.InfoWindow({
-            content: loc.label
+            content: '<span>' + loc.label + '</span><br><button class="add-location fn-green-background" data-lat="' + loc["-lat"] + '" data-lng="' + loc["-lng"] + '" data-type="' + thisIcon.name + '" data-label="' + loc.label + '">Add location?</button>'
           });
           
           makeInfoWindowEvent(map, infowindow, marker);

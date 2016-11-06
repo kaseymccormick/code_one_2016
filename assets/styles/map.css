@@ -36,3 +36,10 @@
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     padding: 10px;
 }
+.add-location {
+	border-radius: 0;
+    padding: 12 24;
+    color: white;
+    border: none;
+    font-size: 10px;
+}
