@@ -24,60 +24,60 @@
 </script>
 </head>
 <body>
- 
-
-<!-- Modal HTML embedded directly into document -->
+ <div class="all-appointments">
   <div id="share" style="display:none;">
     <p>Share<a href="#" rel="modal:close" style="float:right;">X</a></p>
   </div>
 
-<div class="appointment-header fn-green-background">
-  <i class="fa fa-address-book-o icon fa-2x"></i>
-  <a href="#share" rel="modal:open" class="share-link-icon"><i class="fa fa-share-alt-square fa-2x" ></i></a>
+  <div class="appointment-header fn-green-background">
+    <i class="fa fa-address-book-o icon fa-2x"></i>
+    <a href="#share" rel="modal:open" class="share-link-icon"><i class="fa fa-share-alt-square fa-2x" ></i></a>
 
-  <h3>First National Bank</h3>
-  <h3>Book an appointment</h3>
+    <h3>First National Bank</h3>
+    <h3>Book an appointment</h3>
+  </div>
+
+
+  <form class="appointment-form" id="appointment-form" action="javascrip:;" onsubmit="addApptmt(this);" enctype="multipart/form-data" method="post">
+    <div class="input-line">
+      <input type="text" id="datepicker" placeholder="Date" name="date" required>
+    </div>
+    <div class="input-line">
+      <select id="time" name="time" required>
+        <option>11:00 am</option>
+        <option selected>1:00 pm</option>
+        <option>2:00 pm</option>
+        <option>2:30 pm</option>
+      </select>
+      <div class="form-helper"><div class='aria'><i class='fa fa-clock-o fa-2x'></i></div></div>
+    </div>
+    <div class="input-line">
+      <select id="branch-location" name="branch-location" required>
+        <option>114th & Dodge</option>
+        <option selected>27th & Pine Lake </option>
+        <option>13th & L Branch</option>
+        <option>87th & Hwy 2 Branch</option>
+      </select>
+      <div class="form-helper"><div class='aria'><i class='fa fa-location-arrow fa-2x'></i></div></div>
+    </div>
+     <div class="input-line" >
+      <select id="branch-teller" name="branch-teller" required>
+        <option>Larry Stauss</option>
+        <option selected>Debbie Mathews</option>
+        <option>Roger Ayan</option>
+        <option>Flory Peterson</option>
+      </select>
+      <div class="form-helper"><div class='aria'><i class='fa fa-user-circle-o fa-2x'></i></div></div>
+    </div>
+    <button class="form-submit fn-green-background">Submit</button>
+  </form>
+
+
+  <h3 style="text-align:center;">Your Appointments</h3>
+  <div id="well">
+    
+  </div>
 </div>
-
-
-<form class="appointment-form" id="appointment-form" action="javascrip:;" onsubmit="addApptmt(this);" enctype="multipart/form-data" method="post">
-  <div class="input-line">
-    <input type="text" id="datepicker" placeholder="Date" name="date" required>
-  </div>
-  <div class="input-line">
-    <select id="time" name="time" required>
-      <option>11:00 am</option>
-      <option selected>1:00 pm</option>
-      <option>2:00 pm</option>
-      <option>2:30 pm</option>
-    </select>
-    <div class="form-helper"><div class='aria'><i class='fa fa-clock-o fa-2x'></i></div></div>
-  </div>
-  <div class="input-line">
-    <select id="branch-location" name="branch-location" required>
-      <option>114th & Dodge</option>
-      <option selected>27th & Pine Lake </option>
-      <option>13th & L Branch</option>
-      <option>87th & Hwy 2 Branch</option>
-    </select>
-    <div class="form-helper"><div class='aria'><i class='fa fa-location-arrow fa-2x'></i></div></div>
-  </div>
-   <div class="input-line" >
-    <select id="branch-teller" name="branch-teller" required>
-      <option>Larry Stauss</option>
-      <option selected>Debbie Mathews</option>
-      <option>Roger Ayan</option>
-      <option>Flory Peterson</option>
-    </select>
-    <div class="form-helper"><div class='aria'><i class='fa fa-user-circle-o fa-2x'></i></div></div>
-  </div>
-  <button class="form-submit fn-green-background">Submit</button>
-</form>
-
-<div id="well">
-  
-</div>
-
 <script>
   function showApptmts(){
       var appointments = JSON.parse(localStorage.getItem("fnb-appts")) || [];

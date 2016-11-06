@@ -10,6 +10,12 @@ table {
 	font-size: 1em;
 }
 
+.all-appointments {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+}
+
 .ui-draggable, .ui-droppable {
 	background-position: top;
 }
@@ -65,7 +71,6 @@ table {
 }
 
 .appointment-form {
-    max-width: 840px;
     padding: 10px;
     text-align: center;
     background-color: #f2f2f2;
@@ -145,7 +150,7 @@ table {
 #well {
     height: 200px;
     padding: 20px;
-        box-shadow: inset 2px 2px 1px rgba(0,0,0,.05);
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,.05);
 }
 
 .fn-appointment {
