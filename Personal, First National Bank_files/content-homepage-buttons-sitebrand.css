@@ -1,0 +1,33 @@
+/* buttons ***** */
+/* buttons ***** */
+/* buttons ***** */
+#wrapper2 a.btn,
+#wrapper2 button.btn,
+#wrapper2 span.btn {
+  background-color:#4aaa42 !important;
+  background-image:url(../img/bg-button.png); 
+  background-position:top;
+  background-repeat:repeat-x;
+  border-color: #063;
+  color:#fff;
+
+  text-shadow: 1px 1px 2px #666;
+}
+#wrapper2 a.btn:hover,
+#wrapper2 button.btn:hover,
+#wrapper2 span.btn:hover {
+  background-image:none;
+}
+#wrapper2 a.btn-disabled span,
+#wrapper2 a.btn-disabled:hover span,
+#wrapper2 button.btn-disabled span,
+#wrapper2 span.btn-disabled input {
+  background-color:#ccc;
+  color:#6b6b6b;
+}
+#wrapper2 a.btn span,
+#wrapper2 button.btn span,
+#wrapper2 span.btn input.btn {
+  background-color:transparent;
+}
+/* buttons ***** */
