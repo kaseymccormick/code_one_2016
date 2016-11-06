@@ -239,3 +239,10 @@ ul {
     width: 960px;
     background: #fff;
 }
+
+.app-flex{
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  align-items: baseline;
+}
