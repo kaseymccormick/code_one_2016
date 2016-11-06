@@ -22,6 +22,9 @@ colors
 .warm-merlot{
 
 }
+.warm-merlot-text{
+    color: #7c2529;
+}
 .warm-yellow{
 
 }
@@ -59,6 +62,8 @@ Logged in, dashboard styles
 ------------------------------*/
 .list-no-style{
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 h1{
 
@@ -127,6 +132,13 @@ Dashboard
     -moz-border-radius: 5px;
     border-radius: 5px;;
 }
+.card__header{
+padding:15px 0px 0px 10px;
+}
+.card__content{
+    padding: 10px;
+    margin-top: 20px;
+}
 .widget-list__item{
     padding: 20px;
     border: solid 1px #CCCCCC;
@@ -175,13 +187,14 @@ Overwite pure
 
 /*CHart*/
 .chart {
-    background: conic-gradient(#ffaa4d 13%, #f3dd6d 0 17%, #007396 0 );
+    background: conic-gradient(#ffaa4d 40%, #007396 0 56%,  #f3dd6d 0 );
     border-radius: 50%;
     width: 50%;
     height: 0;
     padding-top: 50%;
     float: left;
     padding-right: 20px;
+
 }
 .key {
     width: 50%;
@@ -189,6 +202,7 @@ Overwite pure
     list-style: none;
     display: table;
     border-collapse: separate;
+    padding-left: 5px;
 }
 .key > li {
     display: table-row;
@@ -218,8 +232,5 @@ Overwite pure
 
 * {
     box-sizing: border-box;
-}
-body {
-    padding: 20px;
-    font-family: sans-serif;
-}
+
+
