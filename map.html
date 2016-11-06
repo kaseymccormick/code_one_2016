@@ -18,10 +18,11 @@
 <body>
 <div class="all-map">
 	<h3 style="text-align:center;">First National Bank Locations</h3>
-    <div id="map"></div>
-    <div id="legend"><h3>Legend</h3></div>
-    <h3 style="text-align:center;">Your Locations</h3>
-    <div id="well"></div>
+  <div id="map"></div>
+  <div id="legend"><h3>Legend</h3></div>
+  <h3 style="text-align:center;">Your Locations</h3>
+  <div id="well"></div>
+</div>
     <script>
 	  function showMyLocations(){
 	      var appointments = JSON.parse(localStorage.getItem("fnb-locations")) || [];
@@ -59,7 +60,7 @@
 	    showMyLocations();
 	  }
 	  window.onload = showMyLocations;
-	</script>
+	 </script>
     <script>
       function initMap() {
       	// from branch_locations.js
@@ -180,7 +181,6 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHo9YOCSVQJtZ54zGnnjuEi93gsK6aw8U&callback=initMap">
     </script>
-   </div>
 </body>
 </html>
 
