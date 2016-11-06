@@ -7,6 +7,9 @@ colors
 .fn-green-text{
     color: #006633;
 }
+.fn-light-green-text{
+    color: #4AAA42;
+}
 .cool-teal{
     color: #00b2a9;
 }
@@ -27,6 +30,9 @@ colors
 }
 .warm-yellow{
 
+}
+.light-gray-background{
+    background: #efefef;
 }
 
 
@@ -270,6 +276,22 @@ Overwite pure
     box-sizing: border-box;
   }
 
+<<<<<<< HEAD
+
+}
+    .slider-img, .login-box{
+        display: inline-block;
+    }
+
+.pure-g.givemespace {
+    margin-top: 130px;
+}
+a, a:visited{
+    color: #006633;
+}
+
+=======
+>>>>>>> master
 .flex-me {
     display: flex;
     justify-content: center;
@@ -339,3 +361,4 @@ Overwite pure
       background: #007396;
       padding-right: 8px;
   }
+

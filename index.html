@@ -33,7 +33,7 @@
 <div class="background">
   <div class="section-2">
     <div  class="slider" style="position: relative; left: 0; top: 0;">
-      <img class="login-box" src="assets/images/login-button.png" style="position: relative; top: 0; left: 0;"/>
+      <img class="login-box" src="assets/images/loginshot.png" style="position: relative; top: 0; left: 0;"/>
       <img class="slider-img" src="assets/images/slider.png" >
     </div>
     <div class="core-values">
@@ -115,14 +115,14 @@
     <div id="cc-step" class="pure-u-23-24 dashboard__card dashboard__card--nospace card-center" style="display: none">
       <h2 class="center fancy">What benefit are you more interested in?</h2>
       <div class="pure-g flex">
-            <a class="pure-u-11-24 choice"href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Cash Back</a>
-            <a class="pure-u-11-24 choice left-margin" href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Low Interest</a>
+            <a class="pure-u-11-24 choice"href="#cc-choices" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Cash Back</a>
+            <a class="pure-u-11-24 choice left-margin" href="#cc-choices" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Low Interest</a>
             <a class="pure-u-3-24 back-button" href="#personal-step" onClick="$('#cc-step').toggle(); $('#personal-step').toggle();">Back</a>
       </div>
     </div>
 
     <div id="savings-step" class="pure-u-23-24 dashboard__card dashboard__card--nospace card-center" style="display: none">
-      <h2 class="center fancy">We have the following savings accounts.</h2>
+      <h2 class="center fancy"><span>We have the following savings accounts.</span></h2>
       <div class="pure-g flex">
         <div class="pure-u-23-24">
 
@@ -154,68 +154,99 @@
         </div>
       </div>
     </div>
-    <div class="pure-u-1-1" id="cc-table" style="display: none">
-      <a name="cc-step"></a>
-      <a href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-step').toggle();">Back</a>
-      <table>
+    <div id="cc-table" class="pure-u-23-24 dashboard__card dashboard__card--nospace card-center"  style="display: none">
+      <div class="padding-20">
+      <!--<a id="cc-choices" href="#cc-step" onClick="$('#cc-table').toggle(); $('#cc-table').toggle();">Back</a>-->
+      <h2 class="center fancy"><span>We have the following savings accounts.</span></h2>
+
+      <table class="padding-20">
+        <tr>
+          <td></td>
+          <td><img src="assets/images/visa_cashback_sm.png" alt=""/></td>
+          <td><img src="assets/images/amex_sm.png" alt=""/></td>
+          <td><img src="assets/images/visa_rewards_sm.png" alt=""/></td>
+          <td><img src="assets/images/visa_platinum_sm.png" alt=""/></td>
+          <td><img src="assets/images/visa_secured_sm.png" alt=""/></td>
+
+        </tr>
         <tr>
           <td><strong></strong></td>
-          <td><strong>CashBack Visa Card</strong></td>
+          <td class="win-cash-back"><strong>CashBack Visa Card</strong></td>
           <td><strong>First National Bank American Express Card</strong></td>
           <td><strong>Complete REwards Visa Card</strong></td>
-          <td><strong>Platinum Edition Visa Card</strong></td>
+          <td class="win-apr"><strong>Platinum Edition Visa Card</strong></td>
           <td><strong>Secured Visa Card</strong></td>
         </tr>
         <tr>
-          <td><strong>No Annual Fees</strong></td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
+          <td>No Annual Fees</td>
+          <td class="fn-light-green-text win-cash-back">&#10004;</td>
+          <td class="fn-light-green-text">&#10004;</td>
+          <td class="fn-light-green-text">&#10004;</td>
+          <td class="fn-light-green-text win-apr">&#x2714;</td>
+          <td class="fn-light-green-text">&#x2714;</td>
         </tr>
-        <tr>
-          <td><strong>Cash Back</strong></td>
-          <td>2%</td>
+        <tr class="light-gray-background">
+          <td >Free Fico Credit Score</td>
+          <td class="fn-light-green-text win-cash-back">&#10004;</td>
+          <td class="fn-light-green-text">&#10004;</td>
+          <td class="fn-light-green-text">&#10004;</td>
+          <td class="fn-light-green-text win-apr">&#x2714;</td>
+          <td class="fn-light-green-text">&#x2714;</td>
+        </tr>
+        <tr >
+          <td>Cash Back</td>
+          <td class="win-cash-back">2%</td>
           <td>1.5%</td>
           <td>1%</td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><strong>Rewards</strong></td>
-          <td>-</td>
-          <td>Receive a statement credit automatically every time you earn $25 in cash back. A one-time $100 automatic statement credit when you spend $500 in the first 3 billing cycles.</td>
-          <td>DOUBLE YOUR REWARDS: Choose to redeem your rewards into your checking, savings, mortgage or NEST 529 account for a higher value of 2% back.</td>
-          <td>$25 statement credit when you make a purchase within the first 3 billing cycles.</td>
-          <td>Request your own credit limit, establish or improve your credit, qualify for a credit limit increase.</td>
-        </tr>
-        <tr>
-          <td><strong>Rewards Never Expire?</strong></td>
-          <td>X</td>
-          <td>X</td>
-          <td>X</td>
-          <td></td>
+          <td class="win-apr"></td>
           <td></td>
         </tr>
+        <tr class="light-gray-background">
+          <td>Rewards</td>
+          <td class="win-cash-back"> 2 points per $1 spent <br/>
+               $25 cash back for every 2500 points <br/>
+          </td>
+          <td> $100 automatic statement credit<sup>1</sup> </td>
+          <td> Ability to Double your Rewards <sup>2</sup></td>
+          <td class="win-apr"> $25 statement credit <sup>3</sup></td>
+          <td> Request your own credit limit <sup>4</sup></td>
+        </tr>
         <tr>
-          <td><strong>APR</strong></td>
-          <td>17.99%</td>
+          <td>Rewards Never Expire?</td>
+          <td class="fn-light-green-text win-cash-back">&#10004;</td>
+          <td class="fn-light-green-text">&#10004;</td>
+          <td class="fn-light-green-text">&#10004;</td>
+          <td class="win-apr"></td>
+          <td></td>
+        </tr>
+
+        <tr class="light-gray-background">
+          <td>APR</td>
+          <td class="win-cash-back">17.99%</td>
           <td>19.24%</td>
           <td>0% for 15 billing cycles, then variable from 16.24% - 23.24%</td>
-          <td>0% for 15 billing cycles, then variable from 10.24% - 18.24%</td>
+          <td class="win-apr">0% for 15 billing cycles, then variable from 10.24% - 18.24%</td>
           <td>Variable 18.24%</td>
         </tr>
         <tr>
           <td></td>
-          <td><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-cashback.fhtml">Learn More</a></td>
+          <td class="win-cash-back"><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-cashback.fhtml">Learn More</a></td>
           <td><a href="https://www.firstnational.com/site/personal/credit-card/amex/amex-standard.fhtml">Learn More</a></td>
           <td><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-completerewards.fhtml">Learn More</a></td>
-          <td><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-completerewards.fhtml">Learn More</a></td><td>
+          <td class="win-apr"><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-completerewards.fhtml">Learn More</a></td>
           <td><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-secured.fhtml">Learn More</a></td>
         </tr>
       </table>
+      <note>
+        <sup>1</sup>when you spend $500 in the first 3 billing cycles. <br/>
+        <sup>2</sup>by redeeming them into your checking, savings, mortgage or NEST 529 account for a higher value of 2% back.
+        <br/>
+        <sup>3</sup>when you make a purchase within the first 3 billing cycles. <br/>
+        <sup>4</sup> by providing a single deposit between $300 and $5,000 (multiples of $50) when you apply (subject to credit approval).
+      </note>
+      </div>
     </div>
+
   </div>
 </div>
 
