@@ -40,10 +40,12 @@
 </div>
 
 
-<form class="appointment-form" action="personal/creditCards.html">
-  <div class="input-line"><input type="text" id="datepicker" placeholder="Date"></div>
-    <div class="input-line">
-    <select id="branch-locations">
+<form class="appointment-form" id="appointment-form" action="javascrip:;" onsubmit="addApptmt(this);" enctype="multipart/form-data" method="post">
+  <div class="input-line">
+    <input type="text" id="datepicker" placeholder="Date" name="date" required>
+  </div>
+  <div class="input-line">
+    <select id="time" name="time" required>
       <option>11:00 am</option>
       <option selected>1:00 pm</option>
       <option>2:00 pm</option>
@@ -52,7 +54,7 @@
     <div class="form-helper"><div class='aria'><i class='fa fa-clock-o fa-2x'></i></div></div>
   </div>
   <div class="input-line">
-    <select id="branch-locations">
+    <select id="branch-location" name="branch-location" required>
       <option>114th & Dodge</option>
       <option selected>27th & Pine Lake </option>
       <option>13th & L Branch</option>
@@ -60,8 +62,8 @@
     </select>
     <div class="form-helper"><div class='aria'><i class='fa fa-location-arrow fa-2x'></i></div></div>
   </div>
-   <div class="input-line">
-    <select id="branch-teller">
+   <div class="input-line" >
+    <select id="branch-teller" name="branch-teller" required>
       <option>Larry Stauss</option>
       <option selected>Debbie Mathews</option>
       <option>Roger Ayan</option>
@@ -71,6 +73,50 @@
   </div>
   <button class="form-submit fn-green-background">Submit</button>
 </form>
+
+<div id="well">
+  
+</div>
+
+<script>
+  function showApptmts(){
+      var appointments = JSON.parse(localStorage.getItem("fnb-appts")) || [];
+      var well = document.getElementById('well');
+      $(".fn-appointment").remove();
+      for (i = 0; i < appointments.length; i ++) {
+        var appt = JSON.parse(appointments[i]);
+        $("#well").append('<div class="fn-appointment"><div style="display:inline-block;width:80%;"><h3>' + appt['branch-location'] + '</h3><h5>' + appt['branch-teller'] + '</h5></div><div style="float:right;width:20%;"><p>' + appt.date + "</p><p>" + appt.time + '</p></div></div>');
+
+    }
+  }
+
+  $.fn.serializeObject = function()
+    {
+        var o = {};
+        var a = this.serializeArray();
+        $.each(a, function() {
+            if (o[this.name] !== undefined) {
+                if (!o[this.name].push) {
+                    o[this.name] = [o[this.name]];
+                }
+                o[this.name].push(this.value || '');
+            } else {
+                o[this.name] = this.value || '';
+            }
+        });
+        return o;
+    };
+
+  function addApptmt(theForm){
+
+    var appointments = JSON.parse(localStorage.getItem('fnb-appts')) || [];
+    appointments.push(JSON.stringify($(theForm).serializeObject()));
+    localStorage.setItem('fnb-appts', JSON.stringify(appointments));
+    showApptmts();
+  }
+  window.onload = showApptmts;
+</script>
+
 </body>
  
 </body>
