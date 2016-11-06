@@ -11,7 +11,7 @@ $(function(){
         { title: "Sydney",        value : 40,   color: "#D7DADB" },
         { title: "Berlin",        value : 20,   color: "#FFF" }
     ]);
-});
+}));
 /*!
  * jquery.drawDoughnutChart.js
  * Version: 0.4.1(Beta)
