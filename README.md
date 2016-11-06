@@ -1,7 +1,7 @@
 # Code One Hackathon 2016 - Team: Drakon
 
 ## Getting Started
-With our tech stack, no setup is needed simply visit [website link here](the website)
+With our tech stack, no setup is needed simply visit [this website](https://kaseymccormick.github.io/code_one_2016/)
 
 ## Project Description
 
