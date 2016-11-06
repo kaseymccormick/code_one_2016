@@ -113,13 +113,17 @@ Bisected header line
     line-height: 0.5;
     text-align: center;
 }
-.fancy-small{
+.fancy-small, .fancy-white{
     text-align: left;
 }
+
 .fancy span {
     display: inline-block;
     position: relative;
     color:#4aaa42;
+}
+.fancy-white span{
+color:white
 }
 .fancy span:before,
 .fancy span:after {
@@ -129,6 +133,10 @@ Bisected header line
     border-top: 3px solid #4aaa42;
     top: 4px;
     width: 84%;
+}
+.fancy-white span:before,
+.fancy-white span:after {
+    border-top: 3px solid #ffffff;
 }
 .fancy-small span:before,
 .fancy-small span:after{
@@ -152,7 +160,9 @@ Dashboard
     min-height: 230px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;;
+    border-radius: 5px;
+    overflow: hidden;
+    
 }
 .card__header{
 padding:15px 0px 0px 10px;
@@ -256,3 +266,10 @@ Overwite pure
     box-sizing: border-box;
 
 
+    .slider-img, .login-box{
+        display: inline-block;
+    }
+
+.pure-g.givemespace {
+    margin-top: 130px;
+}
