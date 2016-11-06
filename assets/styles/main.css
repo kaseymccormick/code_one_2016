@@ -7,6 +7,9 @@ colors
 .fn-green-text{
     color: #006633;
 }
+.fn-light-green-text{
+    color: #4AAA42;
+}
 .cool-teal{
     color: #00b2a9;
 }
@@ -27,6 +30,9 @@ colors
 }
 .warm-yellow{
 
+}
+.light-gray-background{
+    background: #efefef;
 }
 
 
@@ -156,6 +162,35 @@ Bisected header line
     left: 100%;
     margin-left: 15px;
 }
+
+.main {
+    line-height: 0.5;
+    text-align: center;
+}
+
+.main span {
+    display: inline-block;
+    position: relative;
+    color:#4aaa42;
+}
+.main span:before,
+.main span:after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    border-top: 3px solid #4aaa42;
+    top: 4px;
+    width: 13%;
+}
+
+.main span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.main span:after {
+    left: 100%;
+    margin-left: 15px;
+}
 /*------------------------------
 Dashboard
 ------------------------------*/
@@ -269,6 +304,17 @@ Overwite pure
 * {
     box-sizing: border-box;
   }
+    .slider-img, .login-box{
+        display: inline-block;
+    }
+
+.pure-g.givemespace {
+    margin-top: 385px;
+    margin-bottom: 15px;
+}
+a, a:visited{
+    color: #006633;
+}
 
 .flex-me {
     display: flex;
@@ -307,7 +353,7 @@ Overwite pure
 
   .choice{
       border:1px solid #CCCCCC;
-      margin-right: 10px;
+     /* margin-right: 10px;*/
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       border-radius: 5px;
@@ -339,3 +385,7 @@ Overwite pure
       background: #007396;
       padding-right: 8px;
   }
+
+   .display-none{
+       display:none;
+ }

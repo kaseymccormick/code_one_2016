@@ -42,9 +42,9 @@
 }
 
 .nav div.category {
-    bottom: 5px;
+    bottom: 0px;
     position: absolute;
-    right: -116px;
+    right: -115px;
     z-index: 2000;
 }
 
@@ -70,7 +70,7 @@
 .background{
     background-color: rgb(230, 231, 232);
     z-index: -5;
-    height:1000px;
+    height:auto;
 }
 
 /*Section 2*/
@@ -214,5 +214,45 @@ a{
     position: absolute;
     right: 0px;
     bottom: 30px;
-    border: 1px solid #CCCCCC;
+
+}
+.padding-20{
+    padding:20px;
+}
+.win-cash-back, .win-apr{
+    background-color: #4AAA42;
+    background-color:rgba(74, 170, 66, 0.2);
+    border-right: solid 1px #4AAA42;
+    border-left: solid 1px #4AAA42;
+}
+
+.main span:before, .main span:after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    border-top: 3px solid #4aaa42;
+    top: 4px;
+    width: 84%;
+}
+
+#beginning{
+      margin: auto;
+}
+#personal-step{
+      margin: auto;
+}
+#account-step{
+      margin: auto;
+}
+#loan-step{
+      margin: auto;
+}
+#cc-step{
+      margin: auto;
+}
+#savings-step{
+      margin: auto;
+}
+#cc-table{
+      margin: auto;
 }
