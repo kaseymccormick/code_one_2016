@@ -99,6 +99,10 @@ font-weight: bold;
 /*td{*/
     /*min-width: 100px;*/
 /*}*/
+tr{
+    padding: 5px;
+    margin: 5px;
+}
 
 /*------------------------------
 Bisected header line
