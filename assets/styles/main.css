@@ -262,5 +262,11 @@ Overwite pure
 
 * {
     box-sizing: border-box;
+  }
 
-
+.flex-me {
+    display: flex;
+    justify-content: center;
+    padding-top: 7px;
+  }
+    
