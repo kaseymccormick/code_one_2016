@@ -89,7 +89,9 @@ note{
 }
 
 .small{
-  font-size: small;
+  font-size: initial;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 /*------------------------------
  Table styles
@@ -125,17 +127,13 @@ Bisected header line
     line-height: 0.5;
     text-align: center;
 }
-.fancy-small, .fancy-white{
+.fancy-small{
     text-align: left;
 }
-
 .fancy span {
     display: inline-block;
     position: relative;
     color:#4aaa42;
-}
-.fancy-white span{
-color:white
 }
 .fancy span:before,
 .fancy span:after {
@@ -145,10 +143,6 @@ color:white
     border-top: 3px solid #4aaa42;
     top: 4px;
     width: 84%;
-}
-.fancy-white span:before,
-.fancy-white span:after {
-    border-top: 3px solid #ffffff;
 }
 .fancy-small span:before,
 .fancy-small span:after{
@@ -172,12 +166,7 @@ Dashboard
     min-height: 230px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;
-    overflow: hidden;
-    
-}
-.dashboard__card--nospace{
-    margin: 7px auto;
+    border-radius: 5px;;
 }
 .card__header{
 padding:15px 0px 0px 10px;
@@ -190,7 +179,7 @@ padding:15px 0px 0px 10px;
     padding: 20px;
     border: solid 1px #CCCCCC;
     line-height: 20px;
-    background: #dfdfdf;
+    background: whtie;
 }
 /*------------------------------
 Dashboard dragability
@@ -281,19 +270,6 @@ Overwite pure
     box-sizing: border-box;
   }
 
-
-}
-    .slider-img, .login-box{
-        display: inline-block;
-    }
-
-.pure-g.givemespace {
-    margin-top: 130px;
-}
-a, a:visited{
-    color: #006633;
-}
-
 .flex-me {
     display: flex;
     justify-content: center;
@@ -303,8 +279,8 @@ a, a:visited{
   
   .argh{
 
-    padding-top: 21px;
-    padding-bottom: 22px;
+    padding-top: 20px;
+    padding-bottom: 12px;
     overflow: hidden;
         width: 79%;
   }
@@ -312,7 +288,7 @@ a, a:visited{
   .widget-list{
     display: flex;
     flex-direction: column;
-    width: 126%;
+    width: 105%;
         margin-left: 27px;
   }
   
@@ -323,4 +299,43 @@ a, a:visited{
   
   #section1 .cross-sell .ad {
     margin-left: 0px;
+  }
+  
+  .weatherh5{
+    font-size: large;
+  }
+
+  .choice{
+      border:1px solid #CCCCCC;
+      margin-right: 10px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      margin-top: 10px;
+  }
+  .choice:hover{
+      background: #efefef;
+      box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important ;
+  }
+  
+  .dropzone:hover{
+      background: #efefef;
+      box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important ;
+  }
+  
+  .key > li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: baseline;
+      
+  }
+  
+  .key > li > *{
+    padding-left: 4px;
+    padding-right: 4px
+  }
+  
+  .blue {
+      background: #007396;
+      padding-right: 8px;
   }
