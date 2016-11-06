@@ -125,31 +125,36 @@
         };
         // from style_map.js
         var fnbStyle = fnbStyleMap();
-		var styledMapType = new google.maps.StyledMapType(fnbStyle, {name: 'Styled Map'});
+		    var styledMapType = new google.maps.StyledMapType(fnbStyle, {name: 'Styled Map'});
 
 	    //Associate the styled map with the MapTypeId and set it to display.
         map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
 
-        for (i = 0; i < branches.length; i ++ ){
+        for (i = 0; i < locations.length; i ++ ){
+          var loc = locations[i];
         	var marker = new google.maps.Marker({
           		position: {
-          			"lat": parseFloat(branches[i]["-lat"]),
-          			"lng": parseFloat(branches[i]["-lng"])
+          			"lat": parseFloat(loc["-lat"]),
+          			"lng": parseFloat(loc["-lng"])
           		},
           		icon: icons.deposit.icon,
-          		label: {
-          			text: branches[i].label,
-          			fontFamily: "Lucida Grande",
-          			fontSize: "11px"
-          		},
           		animation: google.maps.Animation.DROP,
 
           		map: map
         	});
 
+          var infowindow = new google.maps.InfoWindow({
+            content: loc.label
+          });
+          
+          makeInfoWindowEvent(map, infowindow, marker);
+
         	marker.addListener('click', toggleBounce);
         }
+
+
+
         function toggleBounce() {
 	        if (this.getAnimation() !== null) {
 	          this.setAnimation(null);
@@ -157,6 +162,14 @@
 	          this.setAnimation(google.maps.Animation.BOUNCE);
 	        }
       	}
+
+ 
+      
+      function makeInfoWindowEvent(map, infowindow, marker) {
+        google.maps.event.addListener(marker, 'click', function() {
+        infowindow.open(map, marker);
+        });
+      }
 
         var legend = document.getElementById('legend');
         for (var key in icons) {
@@ -175,8 +188,8 @@
         }
 
         map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(legend);
-
       }
+      
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHo9YOCSVQJtZ54zGnnjuEi93gsK6aw8U&callback=initMap">
