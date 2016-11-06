@@ -72,7 +72,8 @@
 
 	<script type="text/javascript" src="./Account Detail_files/jquery_jcarousel_min.js"></script>
 
-
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
 
 	<!--need these css files from FN-->
 	<link href="./Account Detail_files/wrapper.css" rel="stylesheet" type="text/css">
@@ -164,23 +165,21 @@
 							function drop(ev) {
 								ev.preventDefault();
 								var data=ev.dataTransfer.getData("Text");
-								ev.target.appendChild(document.getElementById(data));
+                 ev.target.appendChild(document.getElementById(data));
+            
 							}
-
-
-
 						</script>
 						<!-- end script of todo-->
 
 						<div class="widget-list" >
-							<h2 class="padding-40010 fancy fancy-small"> <span>Available Widgets</span></h2>
-							<div id="3" draggable="true" ondragenter="dragenter(event)" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item">Document Download</div>
-							<div id="4" draggable="true" ondragenter="dragenter(event)" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item">Transfers</div>
-							<div id="5" draggable="true" ondragenter="dragenter(event)" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item">Bill Pay</div>
-							<div id="6" draggable="true" ondragenter="dragenter(event)" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item">Account Services</div>
-							<div id="8" draggable="true" ondragenter="dragenter(event)" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item">Calculator</div>
-							<div id="9" draggable="true" ondragenter="dragenter(event)" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item">
-								<h5 class=""widget-item__header>Weather</h5>
+							<h2 class="fancy argh"> <span>Available Widgets</span></h2>
+							<div id="3" draggable="true" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item small">Document Download</div>
+							<div id="4" draggable="true" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item small">Transfers</div>
+							<div id="5" draggable="true" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item small">Bill Pay</div>
+							<div id="6" draggable="true" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item small">Account Services</div>
+							<div id="8" draggable="true" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item small">Calculator</div>
+							<div id="9" draggable="true" ondragstart="drag(event)" class=" pure-u-4-5 widget-list__item small">
+								<h5 class=" small"widget-item__header>Weather</h5>
 								<div class="widget-item__content">
 
 								</div>
@@ -214,7 +213,7 @@
 				}
 			</script>
 			<!-- end TODO -11-->
-			<div class="cross-sell"><a href="https://www.firstnational.com/common/shared/mobilebanking/mobile_omaha.html?ecid=143103OMARDG0034IWSNTRADT" target="" id="cross-sell"><img src="./Account Detail_files/leftnav-mobile.jpg" class="ad" alt="Mobile" banking="" is="" now="" available=""></a></div>
+			<div class="cross-sell" id="my-ad"><a href="https://www.firstnational.com/common/shared/mobilebanking/mobile_omaha.html?ecid=143103OMARDG0034IWSNTRADT" target="" id="cross-sell"><img src="./Account Detail_files/leftnav-mobile.jpg" class="ad" id="my-ad" alt="Mobile" banking="" is="" now="" available=""></a></div>
 
 			<!-- column -->
 
@@ -248,9 +247,13 @@
 					</div>
 
 				</div>
-				<div class="pure-u-11-24 dashboard__card min-height-200" id="playlist" ondrop="drop(event)" ondragover="allowDrop(event)">
-					draggable area for widget
+				<div class="pure-u-11-24 dashboard__card min-height-200" id="playlist" ondrop="$('#9').toggle(); $('#weather-image').toggle(); $('#playlist').css('border', ''); $('#icon').toggle();" ondragover="allowDrop(event)" style="border: 2px dashed">
+					<div class="flex-me">
+            <i class="fa fa-plus-circle fa-5x" id="icon"></i>
+          <img src="assets/images/weather.png" id="weather-image" style="display: none">
+        </div>
 				</div>
+       
 				<div class="pure-u-23-24 dashboard__card">
 					<h3 class="card__header"> Recent Transactions</h3>
 					<div class="card__content">
@@ -260,7 +263,7 @@
 								<th width="20%">Date</th>
 								<th width="50">Description</th>
 								<th width="10%">Amount</th>
-								<th width="5%" style="padding-right: 5px;">Account <br/> Type</th>
+								<th width="5%" style="padding-right: 5px;">Account</th>
 								<th width="15%">Tag </th>
 							</tr>
 							</thead>
@@ -310,14 +313,6 @@
 							</tbody>
 						</table>
 					</div>
-				</div>
-				<div class="pure-u-11-24 dashboard__card">
-					<h3 class="card__header"> Explore Products and rates</h3>
-
-				</div>
-				<div class="pure-u-11-24 dashboard__card">
-					<h3 class="card__header"> Open an Account</h3>
-
 				</div>
 			</div>
 		</div>

@@ -87,6 +87,10 @@ note{
     text-align: right;
     padding-right: 15px;
 }
+
+.small{
+  font-size: small;
+}
 /*------------------------------
  Table styles
 ------------------------------*/
@@ -99,11 +103,19 @@ font-weight: bold;
 /*td{*/
     /*min-width: 100px;*/
 /*}*/
-tr{
-    padding: 5px;
-    margin: 5px;
+table tr{
+    height: 25px;
+    border-bottom: 1px solid;
 }
 
+table td {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+table th {
+      padding: 5px 5px 5px 5px;
+}
 /*------------------------------
 Bisected header line
 ------------------------------*/
@@ -178,7 +190,7 @@ padding:15px 0px 0px 10px;
     padding: 20px;
     border: solid 1px #CCCCCC;
     line-height: 20px;
-    background: #B3B3B3;
+    background: #dfdfdf;
 }
 /*------------------------------
 Dashboard dragability
@@ -267,7 +279,9 @@ Overwite pure
 
 * {
     box-sizing: border-box;
+  }
 
+<<<<<<< HEAD
 }
     .slider-img, .login-box{
         display: inline-block;
@@ -279,3 +293,35 @@ Overwite pure
 a, a:visited{
     color: #006633;
 }
+=======
+.flex-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+  }
+  
+  .argh{
+
+    padding-top: 21px;
+    padding-bottom: 22px;
+    overflow: hidden;
+        width: 79%;
+  }
+    
+  .widget-list{
+    display: flex;
+    flex-direction: column;
+    width: 126%;
+        margin-left: 27px;
+  }
+  
+  #my-ad{
+    width: 91%;
+        margin-left: 18px;
+  }
+  
+  #section1 .cross-sell .ad {
+    margin-left: 0px;
+  }
+>>>>>>> 7d44b2ab10166b7a28928f038762da5bbbf2be40
