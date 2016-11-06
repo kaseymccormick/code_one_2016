@@ -33,6 +33,7 @@ table {
 
 .appointment-header {
     height: 80px;
+    padding: 5px;
     color: #fff;
     line-height: 1.2;
     text-align: left;
