@@ -275,10 +275,6 @@ Overwite pure
 * {
     box-sizing: border-box;
   }
-
-<<<<<<< HEAD
-
-}
     .slider-img, .login-box{
         display: inline-block;
     }
@@ -290,8 +286,6 @@ a, a:visited{
     color: #006633;
 }
 
-=======
->>>>>>> master
 .flex-me {
     display: flex;
     justify-content: center;
