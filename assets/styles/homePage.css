@@ -54,6 +54,9 @@
     font-size: medium;
     margin: 0 0 0 3px;
 }
+ul {
+    padding-left: 89px;
+}
 
 .nav .category li.category > a {
     border: 1px solid #e6e7e8;
@@ -65,12 +68,14 @@
     text-decoration: none;
     -webkit-border-radius: 4px 4px 0px 0px;
     border-radius: 4px 4px 0 0;
+    
 }
 
 .background{
     background-color: rgb(230, 231, 232);
     z-index: -5;
     height:auto;
+    min-height:755px;
 }
 
 /*Section 2*/
