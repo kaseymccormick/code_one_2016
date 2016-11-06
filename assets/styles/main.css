@@ -89,7 +89,7 @@ note{
 }
 
 .small{
-  font-size: large;
+  font-size: initial;
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
@@ -279,8 +279,8 @@ Overwite pure
   
   .argh{
 
-    padding-top: 21px;
-    padding-bottom: 22px;
+    padding-top: 20px;
+    padding-bottom: 12px;
     overflow: hidden;
         width: 79%;
   }
@@ -316,6 +316,26 @@ Overwite pure
   .choice:hover{
       background: #efefef;
       box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important ;
-
-
+  }
+  
+  .dropzone:hover{
+      background: #efefef;
+      box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important ;
+  }
+  
+  .key > li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: baseline;
+      
+  }
+  
+  .key > li > *{
+    padding-left: 4px;
+    padding-right: 4px
+  }
+  
+  .blue {
+      background: #007396;
+      padding-right: 8px;
   }
