@@ -1,33 +1,47 @@
-# code_one_2016
+# Code One Hackathon 2016 - Team: Drakon
 
-new landing page
- - about
- - core values
- - branch location
- - atm locator
- - start of FN Concierge [I'm interested in information for [myself] [my business]
-[myself/personal]
-I'm interested in [accounts] [loans] [credit card]
+## Getting Started
+With our tech stack, no setup is needed simply visit [website link here](the website)
 
-[accounts]
-I'm interested in [checking] [savings] [investment]
+## Project Description
 
-[loans]
-i'm interested in [home] [auto] [personal]
+### The challenge:
+>Our challenge for you is to invent an experience that would make you want to be a First National Bank customer.
 
-[credit card]
-what's more importaint [ points back] [low rate]
-table of credit cards top two 'in color'
+### Judging Criteria:
+- **Customer Benefit** – How does your idea make the customers experience awesome?
+- **Brand Alignment** – Does your new experience align to the values of the bank?
+- **Omni Channel Experience** - Can  your experience be leveraged in multiple ways )digital and physical)?
+- **Innovative (new or uniquely better)** - Are you doing something that differentiates us from the rest of the Financial Industry?
+
+### Method
+We first looked at the financial companys we deal with from credit cards to our own banking. And looked at their websites and apps for context and gathering what works well, and what doesn't. From there we discussed digital experiences we enjoy. One we all agreed on was setting up our Iphones, a question at a time. And other tools that ndecide information the same way.
 
 
-[my business] 
-interested in [Accounts] [Lending] [Specialized Services]
-[Accounts] 
+### Solution
+After looking at several other banks sites and discussing our own pleasant digital expereinces we found that a walk through solution would be best for new customers, and a configurable dashboard for existing.
 
-[Lending] 
-interested in [credit card] [loan] [lines of credit]
+### How it's built
+**Tech Stack** *and Libraries*
+- HTML
+- CSS
+- Javascript
+- Pure CSS [normalization, grid]
+- Fontawesome [icon font]
+- []
+### Challenges
 
-[Specialized Services]
-questions to further help
+### Accomplishments that We're Proud of
 
-#Image Attribution
+**Cameron**
+> tbd
+
+**Kasey**
+> tbd
+
+**Wendy**
+> tbd
+
+### What we Learned
+
+### Screenshots
