@@ -248,6 +248,13 @@ ul {
 .app-flex{
   display: flex;
   justify-content: center;
-  font-size: larger;
-  align-items: baseline;
+  font-size: x-large;
+}
+
+.icon-flex{
+  display: flex;
+      justify-content: flex-end;
+      position: relative;
+      top: -86px;
+      left: -20px;
 }
