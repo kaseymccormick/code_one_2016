@@ -24,17 +24,35 @@
 </script>
 </head>
 <body>
+  <div class="section-1">
+    <div class="nav">
+      <div class="pure-u-1-3">
+        <img class="logo" src="assets/images/FN_logo.png" alt=""/>
+      </div>
+      <div class="pure-u-2-3 category">
+      <ul>
+        <li class="category"><a href="index.html">Home</a></li>
+        <!-- <li class="category"><a href="">Branch Locator</a></li> -->
+        <li class="category"><a href="appointment.html">ATM and Branch Locator</a></li>
+        <li class="category"><a href="https://www.firstnational.com/site/about-us/">About</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  <div class="background">
+    <div class="section-2">
  <div class="all-appointments">
   <div id="share" style="display:none;">
     <p>Share<a href="#" rel="modal:close" style="float:right;">X</a></p>
   </div>
 
   <div class="appointment-header fn-green-background">
+    <div class="app-flex">
+    <h3>Book an appointment</h3>
     <i class="fa fa-address-book-o icon fa-2x"></i>
     <a href="#share" rel="modal:open" class="share-link-icon"><i class="fa fa-share-alt-square fa-2x" ></i></a>
-
-    <h3>First National Bank</h3>
-    <h3>Book an appointment</h3>
+  </div>
+    
   </div>
 
 
@@ -85,7 +103,7 @@
       $(".fn-appointment").remove();
       for (i = 0; i < appointments.length; i ++) {
         var appt = JSON.parse(appointments[i]);
-        $("#well").append('<div class="fn-appointment"><div style="display:inline-block;width:80%;"><h3>' + appt['branch-location'] + '</h3><h5>' + appt['branch-teller'] + '</h5></div><div style="float:right;width:20%;"><p>' + appt.date + "</p><p>" + appt.time + '</p></div></div>');
+        $("#well").append('<div class="fn-appointment"><div style="display: inline-block; width: 80%; position: relative; top: -18px;"><h3>' + appt['branch-location'] + '</h3><h5>' + appt['branch-teller'] + '</h5></div><div style="float:right;width:20%;position: relative;top: -10px;"><p>' + appt.date + "</p><p>" + appt.time + '</p></div></div>');
 
     }
   }
@@ -116,7 +134,8 @@
   }
   window.onload = showApptmts;
 </script>
-
+</div>
+</div>
 </body>
  
 </body>
