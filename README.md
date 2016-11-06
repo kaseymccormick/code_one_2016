@@ -1,33 +1,44 @@
-# code_one_2016
+# Code One Hackathon 2016 - Team: Drakon
 
-new landing page
- - about
- - core values
- - branch location
- - atm locator
- - start of FN Concierge [I'm interested in information for [myself] [my business]
-[myself/personal]
-I'm interested in [accounts] [loans] [credit card]
+## Getting Started
+With our tech stack, no setup is needed simply visit [website link here](the website)
 
-[accounts]
-I'm interested in [checking] [savings] [investment]
+## Project Description
 
-[loans]
-i'm interested in [home] [auto] [personal]
+### The challenge:
+>>Our challenge for yo is to invent an experience that would make you want to be a First National Bank customer.
 
-[credit card]
-what's more importaint [ points back] [low rate]
-table of credit cards top two 'in color'
+### Judging Criteria:
+- **Customer Benefit** – How does your idea make the customers experience awesome?
+- **Brand Alignment** – Does your new experience align to the values of the bank?
+- **Omni Channel Experience** - Can  your experience be leveraged in multiple ways )digital and physical)?
+- **Innovative (new or uniquely better)** - Are you doing something that differentiates us from the rest of the Financial Industry?
 
+### Method
 
-[my business] 
-interested in [Accounts] [Lending] [Specialized Services]
-[Accounts] 
+**Tech Stack** *and Libraries*
+- HTMl
+- CSS
+- Javascript
+- Pure CSS [normalization, grid]
+- Fontawesome [icon font]
+- []
 
-[Lending] 
-interested in [credit card] [loan] [lines of credit]
+### Solution
 
-[Specialized Services]
-questions to further help
+### How it's built
 
-#Image Attribution
+### Challenges
+
+### Accomplishments that We're Proud of
+
+**Cameron**
+>>
+**Kasey**
+>>
+**Wendy**
+>>
+
+### What we Learned
+
+### Screenshots
