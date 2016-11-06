@@ -10,7 +10,9 @@ li {
 
 .flex{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  width: 100%;
+  min-height: 150px;
 }
 
 .section-1{
@@ -94,5 +96,12 @@ li {
     text-align: center;
   }
   
+/*question borders*/
+  #beginning{
+    border: 5px solid;
+        border-radius: 65px;
+        /* width: 75%; */
+        background: blanchedalmond;
+  }
   
  
